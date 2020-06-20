@@ -1,0 +1,29 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block extraheader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'menu/CSS/style.css' %}"/>
+{% endblock %}
+{% block container %}
+    <div class="container">
+        <div class="row">
+            {% for x in list %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="media">
+                            <img src="{{ x.anh.url }}" class="mr-3 ml-4" alt="..." style="width: 100px; height: 100px">
+                            <div class="media-body" style="width: 90%">
+                                <h5 class="mt-0">{{ x.ten }}</h5>
+                                Price: {{ x.gia }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+    <br><br>
+{% endblock %}

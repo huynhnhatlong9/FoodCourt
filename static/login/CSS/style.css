@@ -1,0 +1,20 @@
+
+.form-login {
+    width: 30%;
+    margin: 40pt auto;
+    background-color: rgba(100, 148, 237, 0.6);
+    border-radius: 10px;
+    padding: 15pt;
+    box-shadow: 0px 0px 20px 5px blue;
+}
+
+.form-login h3 {
+    text-align: center;
+    letter-spacing: 3pt;
+    font-weight: 600;
+}
+
+.form-login a {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
