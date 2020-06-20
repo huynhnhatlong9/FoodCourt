@@ -21,17 +21,17 @@
                         {% csrf_token %}
 
                         <fieldset class="form-group">
-                            <legend class="border-bottom mb-3">Login</legend>
+                            <legend class="border-bottom mb-3">Đăng kí</legend>
                             {{ form|crispy }}
                         </fieldset>
                         <div class="form-group">
-                            <button class="btn btn-outline-primary mb-2" type="submit">Log In</button>
+                            <button class="btn btn-outline-primary mb-2" type="submit">Đăng kí</button>
                         </div>
 
                     </form>
                     <div class="border-top pt-3">
                         <small class="text-muted">
-                            Da co tai khoan? <a href="{% url 'login' %}">Log In</a>
+                            Đã có tài khoản? <a href="{% url 'login' %}">Đăng nhập</a>
                         </small>
                     </div>
                 </div>

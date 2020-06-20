@@ -9,10 +9,7 @@
       font-family: "Poppins", sans-serif;
       padding: 0pt ;
       height: 150%;
-  }
-
-  body {
-      box-sizing: border-box;
+      background-color: rgba(175, 175, 177, 0.8);
   }
 
   .nav {
@@ -26,7 +23,7 @@
   }
 
   .nav .logo h4 {
-      font-family: peachcream;
+      font-family: peachcream, sans-serif;
       font-size: 60px;
       color: white;
       transition: 0.9s;

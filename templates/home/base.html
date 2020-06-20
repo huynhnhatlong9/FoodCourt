@@ -36,12 +36,25 @@
                 </div>
             </div>
             <div class="col-sm-2 align-self-center">
-                <div class="a">
-
-                    {% block login %}
-                    {% endblock login %}
-
-                </div>
+                {% if user.is_authenticated %}
+                    <div class="a">
+                        <a href="{% url 'logout' %}" style="text-decoration: none">
+                            <div class="login">
+                                <i class="fa fa-sign-in " aria-hidden="true"></i>
+                                <h5>Logout</h5>
+                            </div>
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="a">
+                        <a href="{% url 'login' %}" style="text-decoration: none">
+                            <div class="login">
+                                <i class="fa fa-sign-in " aria-hidden="true"></i>
+                                <h5>Login</h5>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

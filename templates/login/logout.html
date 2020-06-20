@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% load crispy_forms_filters %}
+{% load static %}
+{% block title %}
+    <title>Logouted</title>
+{% endblock %}
+{% block extraheader %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/CSS/style.css' %}"/>
+{% endblock %}
+
+{% block container %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h2>Bạn đã đang xuất!</h2>
+                    <div class="border-top pt-3">
+                        <small class="text-muted">
+                            Đăng nhập lại? <a href="{% url 'login' %}">Đăng nhập</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
