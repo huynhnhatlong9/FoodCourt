@@ -26,9 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +100,7 @@
       <workItem from="1592576317287" duration="11519000" />
       <workItem from="1592641930496" duration="7355000" />
       <workItem from="1592649326978" duration="153000" />
-      <workItem from="1592649516196" duration="703000" />
+      <workItem from="1592649516196" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -132,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592648682329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix">
+      <created>1592656491746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592656491746</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix">
+      <created>1592656599318</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592656599318</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +177,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aa" />
     <MESSAGE value="fix nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix nav" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -200,22 +213,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="555" y="140" width="309" height="517" key="EnvironmentVariablesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649157169" />
-    <state width="1320" height="96" key="GridCell.Tab.0.bottom" timestamp="1592649294400">
+    <state width="1320" height="96" key="GridCell.Tab.0.bottom" timestamp="1592656664015">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592649294400" />
-    <state width="1320" height="96" key="GridCell.Tab.0.center" timestamp="1592649294399">
+    <state width="1320" height="96" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592656664015" />
+    <state width="1320" height="96" key="GridCell.Tab.0.center" timestamp="1592656664014">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592649294399" />
-    <state width="1320" height="96" key="GridCell.Tab.0.left" timestamp="1592649294397">
+    <state width="1320" height="96" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592656664014" />
+    <state width="1320" height="96" key="GridCell.Tab.0.left" timestamp="1592656664012">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592649294397" />
-    <state width="1320" height="96" key="GridCell.Tab.0.right" timestamp="1592649294400">
+    <state width="1320" height="96" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592656664012" />
+    <state width="1320" height="96" key="GridCell.Tab.0.right" timestamp="1592656664014">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592649294400" />
+    <state width="1320" height="96" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592656664014" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -236,10 +249,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1592649596504" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592649085087">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592656621205">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592649085087" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592656621205" />
     <state x="454" y="313" width="448" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592588388414">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -252,10 +265,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="354" y="186" width="648" height="424" key="git4idea.merge.GitPullDialog/0.28.1366.740@0.28.1366.740" timestamp="1592648957846" />
-    <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592588346586">
+    <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592656900531">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592588346586" />
+    <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592656900531" />
     <state x="463" y="199" width="430" height="395" key="zielu.gittoolbox.ui.GitPushTagsDialog" timestamp="1592588441259">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
