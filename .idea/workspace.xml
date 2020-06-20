@@ -27,14 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update login logout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/home/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/home/CSS/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,7 @@
       <workItem from="1592576317287" duration="11519000" />
       <workItem from="1592641930496" duration="7355000" />
       <workItem from="1592649326978" duration="153000" />
-      <workItem from="1592649516196" duration="13956000" />
+      <workItem from="1592649516196" duration="14259000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -167,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592672074306</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update login logout">
+      <created>1592673184489</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592673184489</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,22 +237,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="555" y="140" width="309" height="517" key="EnvironmentVariablesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649157169" />
-    <state width="1320" height="96" key="GridCell.Tab.0.bottom" timestamp="1592673032783">
+    <state width="1320" height="96" key="GridCell.Tab.0.bottom" timestamp="1592673056107">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592673032783" />
-    <state width="1320" height="96" key="GridCell.Tab.0.center" timestamp="1592673032782">
+    <state width="1320" height="96" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592673056107" />
+    <state width="1320" height="96" key="GridCell.Tab.0.center" timestamp="1592673056107">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592673032782" />
-    <state width="1320" height="96" key="GridCell.Tab.0.left" timestamp="1592673032778">
+    <state width="1320" height="96" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592673056107" />
+    <state width="1320" height="96" key="GridCell.Tab.0.left" timestamp="1592673056106">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592673032778" />
-    <state width="1320" height="96" key="GridCell.Tab.0.right" timestamp="1592673032782">
+    <state width="1320" height="96" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592673056106" />
+    <state width="1320" height="96" key="GridCell.Tab.0.right" timestamp="1592673056107">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592673032782" />
+    <state width="1320" height="96" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592673056107" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -273,10 +273,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1592649596504" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592672080992">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592673190484">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592672080992" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592673190484" />
     <state x="454" y="313" width="448" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592588388414">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
