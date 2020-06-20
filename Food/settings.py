@@ -17,7 +17,6 @@ from django.conf import global_settings
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -28,7 +27,6 @@ SECRET_KEY = '-zepg-%c(by=99e0!v-pj*(%q+_%o^)&q&=5om_+1ok3&91scn'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -44,6 +42,7 @@ INSTALLED_APPS = [
     'menu',
     'bootstrap',
     'fontawesome',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Food.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -88,7 +86,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -108,7 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -122,7 +118,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
@@ -132,3 +127,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '')
 MEDIA_URL = '/media/'
 
 APPEND_SLASH = True
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+LOGIN_REDIRECT_URL = 'home'

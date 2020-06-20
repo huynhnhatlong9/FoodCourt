@@ -17,11 +17,15 @@ from django.conf import settings
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path, include
+from login import views as login_view
 
 urlpatterns = [
-                  url(r'^admin/', admin.site.urls),
-                  url(r'^login/', include('login.urls')),
-                  url(r'^menu/', include('menu.urls')),
+                  path('admin/', admin.site.urls),
+                  path('register/', login_view.register, name='register'),
+                  path('menu/', include('menu.urls')),
+                  url('login/', LoginView.as_view(template_name='login/login.html'), name='login'),
+                  url('logout/', LogoutView.as_view(template_name='login/logout.html'), name='logout'),
                   url(r'^$', include('home.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
