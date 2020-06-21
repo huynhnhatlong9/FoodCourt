@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'bootstrap',
     'fontawesome',
     'crispy_forms',
+    'order',
 ]
 
 MIDDLEWARE = [

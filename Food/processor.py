@@ -1,4 +1,4 @@
-from home.models import Food as foods
+from home.models import Product as foods
 
 
 def context(request):
