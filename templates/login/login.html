@@ -16,9 +16,8 @@
             </div>
             <div class="col-md-4 pt-3 pb-3" style="background-color: white; border-radius: 10px">
                 <div class="content-section">
-                    <form action="#" method="POST">
+                    <form method="POST">
                         {% csrf_token %}
-
                         <fieldset class="form-group">
                             <legend class="border-bottom mb-3">Đăng nhập</legend>
                             {{ form|crispy }}

@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update models.py">
-      <change afterPath="$PROJECT_DIR$/templates/menu/addfood.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Food/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/addfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/addfood.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +50,31 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="b8c3cbc96b81c67ac38fa6900d910989984817e1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1592804063" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1dXZEprdv2LbcgAbumBJGTaJH7S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -118,6 +136,8 @@
       <workItem from="1592649326978" duration="153000" />
       <workItem from="1592649516196" duration="14811000" />
       <workItem from="1592703342063" duration="10359000" />
+      <workItem from="1592832693149" duration="10521000" />
+      <workItem from="1592849400976" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -214,19 +234,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -273,22 +281,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="555" y="140" width="309" height="517" key="EnvironmentVariablesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649157169" />
-    <state width="1320" height="203" key="GridCell.Tab.0.bottom" timestamp="1592761991617">
+    <state width="1320" height="112" key="GridCell.Tab.0.bottom" timestamp="1592849371448">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="203" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592761991617" />
-    <state width="1320" height="203" key="GridCell.Tab.0.center" timestamp="1592761991616">
+    <state width="1320" height="112" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
+    <state width="1320" height="112" key="GridCell.Tab.0.center" timestamp="1592849371447">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="203" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592761991616" />
-    <state width="1320" height="203" key="GridCell.Tab.0.left" timestamp="1592761991616">
+    <state width="1320" height="112" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
+    <state width="1320" height="112" key="GridCell.Tab.0.left" timestamp="1592849371447">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="203" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592761991616" />
-    <state width="1320" height="203" key="GridCell.Tab.0.right" timestamp="1592761991617">
+    <state width="1320" height="112" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
+    <state width="1320" height="112" key="GridCell.Tab.0.right" timestamp="1592849371448">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="203" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592761991617" />
+    <state width="1320" height="112" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -309,10 +317,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1592703485736" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592673647522">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592804089009">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592673647522" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592804089009" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -325,10 +333,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="408" y="92" width="539" height="613" key="git4idea.branch.GitSmartOperationDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649010582" />
-    <state x="354" y="186" width="648" height="424" key="git4idea.merge.GitPullDialog" timestamp="1592648957846">
+    <state x="354" y="186" width="663" height="425" key="git4idea.merge.GitPullDialog" timestamp="1592804102812">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="354" y="186" width="648" height="424" key="git4idea.merge.GitPullDialog/0.28.1366.740@0.28.1366.740" timestamp="1592648957846" />
+    <state x="354" y="186" width="663" height="425" key="git4idea.merge.GitPullDialog/0.28.1366.740@0.28.1366.740" timestamp="1592804102812" />
     <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592656900531">
       <screen x="0" y="28" width="1366" height="740" />
     </state>

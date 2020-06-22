@@ -1,5 +1,22 @@
 {% extends 'home/base.html' %}
 {% load crispy_forms_filters %}
 {% block container %}
-{{ form|crispy }}
+    <div class="container w-25 bg-light" style="border-radius: 10px">
+
+    {% if user.is_staff %}
+        <form method="post" enctype="multipart/form-data" class="pt-3 pb-3">
+            <fieldset class="form-group">
+                <legend class="border-bottom">Thêm Food</legend>
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-group">
+                    <button class="btn btn-outline-primary">Thêm</button>
+                </div>
+
+            </fieldset>
+        </form>
+        {% else %}
+        <div class="text-danger">Tài khoản không được phép!</div>
+    {% endif %}
+    </div>
 {% endblock %}

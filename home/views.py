@@ -8,7 +8,4 @@ from .models import Product
 
 # Create your views here.
 def index(request):
-    list_food = Product.objects.filter()
-    return render(request, 'home/home.html', {
-        'list_food': list_food,
-    })
+    return render(request, 'home/home.html')

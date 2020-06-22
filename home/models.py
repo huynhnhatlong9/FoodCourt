@@ -8,40 +8,17 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    user_type = models.CharField(max_length=10)
-
-
-class Report(models.Model):
-    user_name = models.CharField(max_length=100)
-    food_buy = models.CharField(max_length=100)
-    date = models.DateField()
-
-
-class Category(models.Model):
-    name = models.CharField(max_length=200,
-                            db_index=True)
-    slug = models.SlugField(max_length=200,
-                            unique=True)
-
-    class Meta:
-        ordering = ('name',)
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse('shop:product_list_by_category',
-                       args=[self.slug])
-
-
 class Product(models.Model):
-    category = models.ForeignKey(Category,
-                                 related_name='products',
-                                 on_delete=models.CASCADE)
+    CATEGORY = (
+        (0, 'Com'),
+        (1, 'Bun'),
+        (2, 'Pho'),
+        (3, 'Mi'),
+    )
+    shop = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={
+        'is_staff': True
+    }, default=True)
+    category = models.IntegerField(choices=CATEGORY)
     name = models.CharField(max_length=200,
                             db_index=True)
     slug = models.SlugField(max_length=200,
@@ -62,7 +39,7 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('shop:product_detail', args=[self.id, self.slug])
+        return reverse('addfood')
 
 
 class Cart(models.Model):
