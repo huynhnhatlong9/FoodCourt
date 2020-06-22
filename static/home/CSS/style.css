@@ -12,112 +12,16 @@
       background-color: rgba(175, 175, 177, 0.8);
   }
 
-  .nav {
-      position: fixed;
-      overflow: hidden;
-      flex-flow: row;
-      align-items: center;
-      z-index: 10;
-      width: 100%;
-      background-color: rgba(23,23,23,0.7);
-  }
 
-  .nav .logo h4 {
-      font-family: peachcream, sans-serif;
-      font-size: 60px;
+ .logo {
+      font-family: peachcream !important;
+      font-size: 40px;
       color: white;
       transition: 0.9s;
   }
-  
-  .nav .logo h4:hover {
-      color: blue;
-      cursor: pointer;
-  }
-  
-
-  
-  .nav  ul {
-      padding: 0;
-      margin-bottom: 0;
-  }
-  
-  .nav  ul li {
-      font-size: 15pt;
-      display: inline;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0pt 20pt 0 20pt;
-      transition: 0.3s;
-  }
-  
-  .nav  ul li:first-child {
-      padding: 0pt 20pt 0 20pt;
-      background-color: rgba(255, 255, 255, 0.4);
-      border-radius: 5px;
-  }
-  
-  .nav  .menu ul li:hover {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      color: blue;
-  }
-  
-  .nav  ul li a {
-      color: white;
-  }
-
-  .nav  .login {
-      display: flex;
-      flex-flow: row;
-  }
-
-  .nav  .login i {
-      color: white;
-      font-size: 20pt !important;
-      margin-right: 5pt;
-  }
-  
-  .nav  .login h5 {
-      color: white;
-  }
-  
-  .nav  .menu ul li a:hover {
-      cursor: pointer;
-      text-decoration: none;
-      color: blue;
-  }
-  
-  .nav  .login:hover *{
-      cursor: pointer;
-      color: blue;
-      text-decoration: none;
-  }
-  
-  .container {
-      position: relative;
-  }
-  
-  .container .img-background {
-      height: 300px;
-      background-image: url(../images/background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 5px;
-  }
-  
-  .list-food img {
-      width: 100px;
-  }
-  
-  .list-food .media {
-      margin-top: 30pt;
-  }
-  
-  .list-food {
-      margin: 50pt;
-      padding: 10pt 50pt 50pt 100pt;
-      background-color: darkgray;
-  }
+ .logo:hover{
+     color: blue;
+ }
 
   .carousel .carousel-inner img{
     width: 100%;

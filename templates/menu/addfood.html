@@ -1,7 +1,7 @@
 {% extends 'home/base.html' %}
 {% load crispy_forms_filters %}
 {% block container %}
-    <div class="container w-25 bg-light" style="border-radius: 10px">
+    <div class="container w-25 bg-light mt-5" style="border-radius: 10px">
 
     {% if user.is_staff %}
         <form method="post" enctype="multipart/form-data" class="pt-3 pb-3">
