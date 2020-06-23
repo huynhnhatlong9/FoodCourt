@@ -13,12 +13,20 @@ class AddFoodView(CreateView):
 
 
 def menu_view(request):
-    query=''
+    query = ''
     if request.GET:
         query = request.GET['q']
 
     food = Product.objects.filter(name__icontains=query)
-    context={
-        'foods':food,
+    context = {
+        'foods': food,
     }
-    return render(request,'menu/menu.html',context)
+    return render(request, 'menu/menu.html', context)
+
+
+def food_store(request):
+    food = Product.objects.filter(shop_id=request.user.id)
+    context = {
+        'foods': food,
+    }
+    return render(request, 'menu/foodstore.html', context)

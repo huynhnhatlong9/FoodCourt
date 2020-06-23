@@ -3,7 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block title %}
-    <title>Login</title>
+    <title>BK | Register</title>
 {% endblock %}
 {% block extraheader %}
     <link rel="stylesheet" type="text/css" href="{% static 'login/CSS/style.css' %}"/>
@@ -19,7 +19,6 @@
                 <div class="content-section">
                     <form action="#" method="POST">
                         {% csrf_token %}
-
                         <fieldset class="form-group">
                             <legend class="border-bottom mb-3">Đăng kí</legend>
                             {{ form|crispy }}
@@ -27,7 +26,6 @@
                         <div class="form-group">
                             <button class="btn btn-outline-primary mb-2" type="submit">Đăng kí</button>
                         </div>
-
                     </form>
                     <div class="border-top pt-3">
                         <small class="text-muted">
