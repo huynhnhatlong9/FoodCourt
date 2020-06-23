@@ -1,35 +1,43 @@
 {% extends 'home/base.html' %}
 {% block title %}
-<title>BK | Food Store</title>
+    <title>BK | Food Store</title>
 {% endblock %}
 {% block container %}
- <div class="container mt-5">
-        <div class="md-form active-cyan active-cyan-2 mb-3">
-            <form method="get" class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" placeholder="Search..." name="q" class="form-control ">
-                </div>
-                <button class="btn btn-primary mb-2" type="submit">Tìm kiếm</button>
-            </form>
-        </div>
+    <div class="container mt-5">
+        {% if user.is_staff %}
 
-        <div class="list-group">
-            <div class="row">
-                {% for x in foods %}
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="media card-body">
-                                <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
-                                     style="width: 100px; height: 100px">
-                                <div class="media-body" style="width: 90%">
-                                    <h5 class="mt-0">{{ x.name }}</h5>
-                                    Price: {{ x.price }}
+
+            <div class="md-form active-cyan active-cyan-2 mb-3">
+                <form method="get" class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" placeholder="Search..." name="q" class="form-control ">
+                    </div>
+                    <button class="btn btn-primary mb-2" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+
+            <div class="list-group">
+                <div class="row">
+                    {% for x in foods %}
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="media card-body">
+                                    <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
+                                         style="width: 100px; height: 100px">
+                                    <div class="media-body" style="width: 90%">
+                                        <h5 class="mt-0">{{ x.name }}</h5>
+                                        Price: {{ x.price }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
+        {% else %}
+            <div class="m-auto">
+                <h5 class="text-danger m-auto"> Tài khoản không hợp lệ!</h5>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}

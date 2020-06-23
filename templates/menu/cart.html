@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block title %}
+    <title>BK | Cart</title>
+{% endblock %}
+{% block container %}
+    <div class="container mt-5">
+        <div class="list-group">
+            <div class="row">
+                {% for x in foods %}
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="media card-body">
+                                <img src="{{ x.food.image.url }}" class="mr-3 ml-4" alt="..."
+                                     style="width: 100px; height: 100px">
+                                <div class="media-body" style="width: 90%">
+                                    <h5 class="mt-0">{{ x.food.name }}</h5>
+                                    <h6>Price: {{ x.food.price }}</h6>
+                                    <h6>Quantity: {{ x.quantity }}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

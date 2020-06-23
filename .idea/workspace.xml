@@ -11,16 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update models.py">
-      <change afterPath="$PROJECT_DIR$/templates/menu/foodstore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/addfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/addfood.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/foodstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/foodstore.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +137,8 @@
       <workItem from="1592857305795" duration="1148000" />
       <workItem from="1592858487405" duration="530000" />
       <workItem from="1592859048769" duration="5313000" />
-      <workItem from="1592901349933" duration="3730000" />
+      <workItem from="1592901349933" duration="4002000" />
+      <workItem from="1592928602846" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592863670356</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update vendor addfood feature">
+      <created>1592910439869</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592910439869</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +269,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="update login logout" />
     <MESSAGE value="update screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="update screen" />
+    <MESSAGE value="update vendor addfood feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="update vendor addfood feature" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -313,25 +319,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592856719395" />
-    <state width="1323" height="78" key="GridCell.Tab.0.bottom" timestamp="1592866056505">
+    <state width="1323" height="217" key="GridCell.Tab.0.bottom" timestamp="1592932515999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="78" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592866056505" />
+    <state width="1323" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592932515999" />
     <state width="1320" height="112" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
-    <state width="1323" height="78" key="GridCell.Tab.0.center" timestamp="1592866056505">
+    <state width="1323" height="217" key="GridCell.Tab.0.center" timestamp="1592932515998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="78" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592866056505" />
+    <state width="1323" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592932515998" />
     <state width="1320" height="112" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
-    <state width="1323" height="78" key="GridCell.Tab.0.left" timestamp="1592866056504">
+    <state width="1323" height="217" key="GridCell.Tab.0.left" timestamp="1592932515998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="78" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592866056504" />
+    <state width="1323" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592932515998" />
     <state width="1320" height="112" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
-    <state width="1323" height="78" key="GridCell.Tab.0.right" timestamp="1592866056505">
+    <state width="1323" height="217" key="GridCell.Tab.0.right" timestamp="1592932515999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="78" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592866056505" />
+    <state width="1323" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592932515999" />
     <state width="1320" height="112" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
@@ -354,10 +360,10 @@
     </state>
     <state x="137" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592865878983" />
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1592703485736" />
-    <state x="278" y="104" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592863686024">
+    <state x="278" y="104" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592910448203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592863686024" />
+    <state x="278" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592910448203" />
     <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592804089009" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />

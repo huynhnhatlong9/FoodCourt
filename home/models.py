@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from datetime import datetime
+
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -45,7 +47,8 @@ class Product(models.Model):
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     food = models.ForeignKey(Product, on_delete=models.CASCADE)
-    date_buy = models.DateTimeField()
+    quantity = models.IntegerField(default=1)
+    date_buy = models.DateTimeField(default=datetime.now())
 
     class Meta:
         ordering = ('user',)

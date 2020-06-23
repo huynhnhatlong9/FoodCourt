@@ -52,7 +52,7 @@
                             {{ user.get_username }}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Cart</a>
+                            <a class="dropdown-item" href="{% url 'cart' %}">Cart</a>
                         </div>
                     </div>
                 {% endif %}
