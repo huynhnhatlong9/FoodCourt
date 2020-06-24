@@ -16,6 +16,19 @@
                                     <h5 class="mt-0">{{ x.food.name }}</h5>
                                     <h6>Price: {{ x.food.price }}</h6>
                                     <h6>Quantity: {{ x.quantity }}</h6>
+<<<<<<< HEAD
+=======
+
+                                    <form action="" method="post">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="cl" value="{{ x.id }}">
+                                        <input type="hidden" name="add" value="{{ x.id }}">
+                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"
+                                                                                               aria-hidden="true"></i>
+                                        </button>
+
+                                    </form>
+>>>>>>> aa3d5307... update models.py
                                 </div>
                             </div>
                         </div>
@@ -23,5 +36,15 @@
                 {% endfor %}
             </div>
         </div>
+<<<<<<< HEAD
+=======
+<br>
+    <div class="payment">
+        <form>
+            <button class="btn btn-light" type="submit">Thanh toán</button>
+        </form>
+    </div>
+
+>>>>>>> aa3d5307... update models.py
     </div>
 {% endblock %}

@@ -31,3 +31,8 @@ soupsieve==2.0.1
 sqlparse==0.3.1
 urllib3==1.25.9
 websocket-client==0.57.0
+<<<<<<< HEAD
+=======
+
+django-filter~=2.3.0
+>>>>>>> aa3d5307... update models.py

@@ -4,4 +4,10 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (FoodCourt)" project-jdk-type="Python SDK" />
+<<<<<<< HEAD
+=======
+  <component name="PythonCompatibilityInspectionAdvertiser">
+    <option name="version" value="3" />
+  </component>
+>>>>>>> aa3d5307... update models.py
 </project>

@@ -1,5 +1,9 @@
 <component name="InspectionProjectProfileManager">
   <settings>
+<<<<<<< HEAD
+=======
+    <option name="PROJECT_PROFILE" value="Default" />
+>>>>>>> aa3d5307... update models.py
     <option name="USE_PROJECT_PROFILE" value="false" />
     <version value="1.0" />
   </settings>

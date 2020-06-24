@@ -10,9 +10,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update models.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update models.py" />
+>>>>>>> aa3d5307... update models.py
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +29,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+<<<<<<< HEAD
+=======
+        <option value="Python Script" />
+>>>>>>> aa3d5307... update models.py
       </list>
     </option>
   </component>
@@ -75,8 +83,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
+<<<<<<< HEAD
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+>>>>>>> aa3d5307... update models.py
   </component>
   <component name="RunManager">
     <configuration name="Food" type="Python.DjangoServer" factoryName="Django server">
@@ -131,7 +145,16 @@
       <workItem from="1592858487405" duration="530000" />
       <workItem from="1592859048769" duration="5313000" />
       <workItem from="1592901349933" duration="4002000" />
+<<<<<<< HEAD
       <workItem from="1592928602846" duration="6330000" />
+=======
+      <workItem from="1592928602846" duration="6713000" />
+      <workItem from="1592969639885" duration="571000" />
+      <workItem from="1592986975307" duration="8604000" />
+      <workItem from="1593009486097" duration="45000" />
+      <workItem from="1593011713986" duration="17000" />
+      <workItem from="1593011732815" duration="37000" />
+>>>>>>> aa3d5307... update models.py
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -245,7 +268,32 @@
       <option name="project" value="LOCAL" />
       <updated>1592934382192</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="17" />
+=======
+    <task id="LOCAL-00017" summary="update cart for customer">
+      <created>1592935260869</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1592935260869</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update cart">
+      <created>1592995566304</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592995566304</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update models.py">
+      <created>1592995735036</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1592995735036</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+>>>>>>> aa3d5307... update models.py
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +312,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
+=======
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+>>>>>>> aa3d5307... update models.py
     <MESSAGE value="aa" />
     <MESSAGE value="fix nav" />
     <MESSAGE value="fix" />
@@ -271,7 +325,13 @@
     <MESSAGE value="update screen" />
     <MESSAGE value="update vendor addfood feature" />
     <MESSAGE value="update cart for customer" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="update cart for customer" />
+=======
+    <MESSAGE value="update cart" />
+    <MESSAGE value="update models.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update models.py" />
+>>>>>>> aa3d5307... update models.py
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -282,9 +342,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="0" key="#Food/0.0.1366.728@0.0.1366.728" timestamp="1592857443930" />
+<<<<<<< HEAD
     <state x="312" y="79" width="732" height="638" key="#Inspections" timestamp="1592579030555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
+=======
+    <state x="312" y="50" width="732" height="638" key="#Inspections" timestamp="1592987693042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="312" y="50" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1592987693042" />
+>>>>>>> aa3d5307... update models.py
     <state x="312" y="79" width="732" height="638" key="#Inspections/0.28.1366.740@0.28.1366.740" timestamp="1592579030555" />
     <state x="552" y="266" width="630" height="264" key="#Notifications" timestamp="1592703382949">
       <screen x="0" y="28" width="1366" height="740" />
@@ -316,6 +383,7 @@
     </state>
     <state x="555" y="110" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592857262602" />
     <state x="555" y="140" width="309" height="517" key="EnvironmentVariablesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649157169" />
+<<<<<<< HEAD
     <state x="427" y="123" key="FileChooserDialogImpl" timestamp="1592856719395">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -339,6 +407,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592934622864" />
+=======
+    <state x="427" y="123" key="FileChooserDialogImpl" timestamp="1593011729396">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593011729396" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593009529964">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593009529964" />
+    <state width="1320" height="112" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593009529963">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593009529963" />
+    <state width="1320" height="112" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593009529963">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593009529963" />
+    <state width="1320" height="112" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592849371447" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593009529963">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593009529963" />
+>>>>>>> aa3d5307... update models.py
     <state width="1320" height="112" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592849371448" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
@@ -356,6 +449,7 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1320" height="217" key="GridCell.Tab.1.right/0.28.1366.740@0.28.1366.740" timestamp="1592588650554" />
+<<<<<<< HEAD
     <state x="137" y="8" width="1022" height="731" key="SettingsEditor" timestamp="1592865878983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -365,15 +459,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="278" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592934398617" />
+=======
+    <state x="137" y="8" width="1022" height="731" key="SettingsEditor" timestamp="1593011767825">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593011767825" />
+    <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1592703485736" />
+    <state x="278" y="104" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1592995746430">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="278" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592995746430" />
+>>>>>>> aa3d5307... update models.py
     <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1592804089009" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.28.1366.740@0.28.1366.740" timestamp="1592759932023" />
+<<<<<<< HEAD
     <state x="504" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1592863659748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="504" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728@0.0.1366.728" timestamp="1592863659748" />
+=======
+    <state x="504" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1592995655452">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="504" y="98" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728@0.0.1366.728" timestamp="1592995655452" />
+>>>>>>> aa3d5307... update models.py
     <state x="454" y="313" width="448" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592588388414">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
