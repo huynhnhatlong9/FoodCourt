@@ -1,8 +1,5 @@
 {% extends 'home/base.html' %}
-<<<<<<< HEAD
-=======
 {% load crispy_forms_filters %}
->>>>>>> aa3d5307... update models.py
 {% load static %}
 {% block title %}
 <title>BK | Menu</title>
@@ -11,15 +8,8 @@
     <div class="container mt-5">
         <div class="md-form active-cyan active-cyan-2 mb-3">
             <form method="get" class="form-inline">
-<<<<<<< HEAD
-                <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" placeholder="Search ..." name="q" class="form-control " value="{{ request.GET.q }}">
-                </div>
-                <button class="btn btn-primary mb-2" type="submit">Tìm kiếm</button>
-=======
                 {{ filter.form|crispy }}
                 <button class="btn btn-primary ml-md-4" type="submit">Tìm kiếm</button>
->>>>>>> aa3d5307... update models.py
             </form>
         </div>
         <div class="list-group">

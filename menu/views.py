@@ -8,10 +8,7 @@ from django.shortcuts import render
 from django.views.generic import CreateView
 
 from home.models import Product, Cart
-<<<<<<< HEAD
-=======
 from .filter import FoodFilter
->>>>>>> aa3d5307... update models.py
 
 
 class AddFoodView(CreateView):
@@ -21,23 +18,6 @@ class AddFoodView(CreateView):
 
 
 def menu_view(request):
-<<<<<<< HEAD
-    query = ''
-    add = ''
-    if request.GET:
-        if 'q' in request.GET:
-            query = request.GET['q']
-        if 'add' in request.GET:
-            add = request.GET['add']
-            if Cart.objects.filter(food__id=add):
-                Cart.objects.filter(food_id=add).update(
-                    quantity=Cart.objects.get(food__id=add).quantity + 1)
-            else:
-                Cart.objects.create(user=request.user, food=Product.objects.get(id=add))
-    food = Product.objects.filter(name__icontains=query)
-    context = {
-        'foods': food,
-=======
     add = ''
     food = Product.objects.all()
     food_filter = FoodFilter(request.GET, queryset=food)
@@ -53,7 +33,6 @@ def menu_view(request):
     context = {
         'foods': food,
         'filter': food_filter,
->>>>>>> aa3d5307... update models.py
     }
     return render(request, 'menu/menu.html', context)
 
@@ -66,11 +45,6 @@ def food_store(request):
     }
     return render(request, 'menu/foodstore.html', context)
 
-<<<<<<< HEAD
-@login_required
-def cart_view(request):
-    food = Cart.objects.filter(user=request.user)
-=======
 
 @login_required
 def cart_view(request):
@@ -85,7 +59,6 @@ def cart_view(request):
                 obj.quantity -= 1
                 obj.save()
     food = Cart.objects.filter(user=request.user)
->>>>>>> aa3d5307... update models.py
     context = {
         'foods': food,
     }
