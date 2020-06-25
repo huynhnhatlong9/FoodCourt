@@ -22,11 +22,15 @@
                                      style="width: 100px; height: 100px">
                                 <div class="media-body" style="width: 90%">
                                     <h5 class="mt-0">{{ x.name }}</h5>
-                                    Price: {{ x.price }}
+                                    <h6>Price: {{ x.food.price }}</h6>
+                                    <h6>Quantity: {{ x.quantity }}</h6>
+                                    {% if user.is_authenticated%}
                                     <form method="get">
+                                        {% csrf_token %}
                                         <input type="hidden" name="add" value="{{ x.id }}">
                                         <input type="submit" formmethod="get" value="Add"  class="btn btn-success">
                                     </form>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

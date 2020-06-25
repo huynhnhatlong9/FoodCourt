@@ -24,7 +24,6 @@
                                         <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"
                                                                                                aria-hidden="true"></i>
                                         </button>
-
                                     </form>
                                 </div>
                             </div>
@@ -33,12 +32,14 @@
                 {% endfor %}
             </div>
         </div>
-<br>
-    <div class="payment">
-        <form>
-            <button class="btn btn-light" type="submit">Thanh toán</button>
-        </form>
-    </div>
+        <br>
+        {% if foods.count > 0 %}
 
+            <div class="payment">
+                <form>
+                    <button class="btn btn-light" type="submit">Thanh toán</button>
+                </form>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}
