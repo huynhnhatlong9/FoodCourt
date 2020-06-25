@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'fontawesome',
     'crispy_forms',
     'order',
+    'jquery',
 ]
 
 MIDDLEWARE = [

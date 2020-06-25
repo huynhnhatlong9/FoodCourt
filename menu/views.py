@@ -1,8 +1,9 @@
 from pprint import pprint
 
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.generic import CreateView
@@ -22,9 +23,9 @@ def menu_view(request):
     food = Product.objects.all().filter(quantity__gt=0)
     food_filter = FoodFilter(request.GET, queryset=food)
     food = food_filter.qs
-    if request.GET:
-        if 'add' in request.GET:
-            add = request.GET['add']
+    if request.POST:
+        if 'add' in request.POST:
+            add = request.POST['add']
             obj = Cart.objects.filter(food_id=add, user_id=request.user.id)
             if obj:
                 obj.update(quantity=obj.first().quantity + 1)
@@ -74,3 +75,44 @@ def cart_view(request):
         'foods': food,
     }
     return render(request, 'menu/cart.html', context)
+
+
+def cart_reduce(request, pk):
+    try:
+        food = Cart.objects.get(id=pk)
+        food.food.quantity += food.quantity
+        food.food.save()
+        food.delete()
+        food = Cart.objects.filter(user=request.user)
+        context = {
+            'foods': food,
+        }
+        return render(request, 'menu/cart.html', context)
+    finally:
+        food = Cart.objects.filter(user=request.user)
+        return redirect('cart')
+
+
+def cart_add(request, pk):
+    try:
+        food = Cart.objects.get(id=pk)
+        if food.food.quantity > 0:
+            food.food.quantity -= 1
+            food.quantity += 1
+            food.food.save()
+            food.save()
+        food = Cart.objects.filter(user=request.user)
+        context = {
+            'foods': food,
+        }
+        return render(request, 'menu/cart.html', context)
+    finally:
+        return redirect('cart')
+
+
+def payment(request):
+    food = Cart.objects.filter(user=request.user)
+    context = {
+        'foods': food,
+    }
+    return render(request, 'menu/payment.html', context)

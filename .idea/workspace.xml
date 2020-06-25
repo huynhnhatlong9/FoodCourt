@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update models.py">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca680f98-cae6-4a7e-a31a-747e231e9cdf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca680f98-cae6-4a7e-a31a-747e231e9cdf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Food/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/home/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/home/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/foodstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/foodstore.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +147,7 @@
       <workItem from="1592703342063" duration="10359000" />
       <workItem from="1592832693149" duration="10521000" />
       <workItem from="1592849400976" duration="17000" />
-      <workItem from="1593077909920" duration="4358000" />
+      <workItem from="1593077909920" duration="12181000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -222,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593016161634</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1593095280028</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593095280028</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +258,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -285,22 +322,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="497" y="156" width="424" height="485" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1593081637103" />
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593081725810">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593098377684">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593081725810" />
-    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593081725810">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593098377684" />
+    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593098377684">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593081725810" />
-    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593081725810">
+    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593098377684" />
+    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593098377683">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593081725810" />
-    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593081725810">
+    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593098377683" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593098377684">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593081725810" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593098377684" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -321,10 +358,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1593078774319" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1593016172747">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1593095300555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1593016172747" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1593095300555" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -345,6 +382,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592656900531" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1593102369048">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1593102369048" />
     <state x="463" y="199" width="430" height="395" key="zielu.gittoolbox.ui.GitPushTagsDialog" timestamp="1592588441259">
       <screen x="0" y="28" width="1366" height="740" />
     </state>

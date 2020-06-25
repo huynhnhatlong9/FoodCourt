@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+{% block title %}
+<title>BK | Payment</title>
+{% endblock %}
+{% block container %}
+    <div class="container jumbotron mt-3">
+        <table class="table table-{1:striped|sm|bordered|hover|inverse} table-inverse">
+            <thead class="thead-inverse|thead-default">
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for food in foods %}
+            <tr>
+                <td scope="row">{{ food.food.name }}</td>
+                <td>{{ food.quantity }}</td>
+                <td>{{food.food.price}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

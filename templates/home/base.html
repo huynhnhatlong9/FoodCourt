@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home/CSS/style.css' %}"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.5.1.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {% block extraheader %} {% endblock extraheader %}
@@ -71,7 +72,8 @@
 </nav>
 {% block container %}
 {% endblock container %}
-
+{% block script %}
+{% endblock script %}
 
 <script src="{% static 'bootstrap/js/jquery-3.5.1.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>

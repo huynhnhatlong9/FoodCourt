@@ -5,7 +5,7 @@
 <title>BK | Menu</title>
 {% endblock %}
 {% block container %}
-    <div class="container mt-5">
+    <div class="container mt-5 jumbotron">
         <div class="md-form active-cyan active-cyan-2 mb-3">
             <form method="get" class="form-inline">
                 {{ filter.form|crispy }}
@@ -25,10 +25,10 @@
                                     <h6>Price: {{ x.food.price }}</h6>
                                     <h6>Quantity: {{ x.quantity }}</h6>
                                     {% if user.is_authenticated%}
-                                    <form method="get">
-                                        {% csrf_token %}
+                                    <form method="post">
+                                    {% csrf_token %}
                                         <input type="hidden" name="add" value="{{ x.id }}">
-                                        <input type="submit" formmethod="get" value="Add"  class="btn btn-success">
+                                        <input type="submit" formmethod="post" value="Add"  class="btn btn-success">
                                     </form>
                                     {% endif %}
                                 </div>

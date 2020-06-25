@@ -3,7 +3,7 @@
     <title>BK | Cart</title>
 {% endblock %}
 {% block container %}
-    <div class="container mt-5">
+    <div class="container mt-5 jumbotron">
         <div class="list-group">
             <div class="row">
                 {% for x in foods %}
@@ -21,9 +21,23 @@
                                         {% csrf_token %}
                                         <input type="hidden" name="cl" value="{{ x.id }}">
                                         <input type="hidden" name="add" value="{{ x.id }}">
-                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"
-                                                                                               aria-hidden="true"></i>
+                                        <button type="submit" class="btn btn-warning btn-sm" id="btn-clear"><i
+                                                class="fa fa-minus"
+                                                aria-hidden="true"></i>
                                         </button>
+                                        <a href="{% url 'cart-add' x.id %}" style="text-decoration: none">
+                                            <button class="btn btn-success btn-sm btn-add" type="button"><i
+                                                    class="fa fa-plus"
+                                                    aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+                                        <a href="{% url 'cart-reduce' x.id %}">
+                                            <button class="btn btn-danger btn-sm btn-add" type="button"><i
+                                                    class="fa fa-trash"
+                                                    aria-hidden="true"></i>
+                                            </button>
+                                        </a>
+
                                     </form>
                                 </div>
                             </div>
@@ -35,11 +49,11 @@
         <br>
         {% if foods.count > 0 %}
 
-            <div class="payment">
-                <form>
-                    <button class="btn btn-light" type="submit">Thanh toán</button>
-                </form>
-            </div>
+            <a href="{% url 'payment' %}">
+                <button class="btn btn-light" type="submit">Thanh toán</button>
+            </a>
+
         {% endif %}
     </div>
 {% endblock %}
+
