@@ -13,26 +13,35 @@
                     <button class="btn btn-primary mb-2" type="submit">Tìm kiếm</button>
                 </form>
             </div>
-
-            <div class="list-group">
-                <div class="row">
-                    {% for x in foods %}
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="media card-body">
-                                    <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
-                                         style="width: 100px; height: 100px">
-                                    <div class="media-body" style="width: 90%">
-                                        <h5 class="mt-0">{{ x.name }}</h5>
-                                        <h6>Price: {{ x.food.price }}</h6>
-                                        <h6>Quantity: {{ x.quantity }}</h6>
+            {% if foods.count > 0 %}
+                <div class="list-group">
+                    <div class="row">
+                        {% for x in foods %}
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="media card-body">
+                                        <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
+                                             style="width: 100px; height: 100px">
+                                        <div class="media-body" style="width: 90%">
+                                            <h5 class="mt-0">{{ x.name }}</h5>
+                                            <h6>Price: {{ x.food.price }}</h6>
+                                            <h6>Quantity: {{ x.quantity }}</h6>
+                                            <a href="{% url 'foodstore-edit' x.id %}"><button class="btn btn-success btn-sm">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                            </button> </a>
+                                            <a href="{% url 'foodstore-delete' x.id %}"><button class="btn btn-danger btn-sm">
+                                                <i class="fa fa-trash"></i>
+                                            </button> </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
+            {% else %}
+                <h5 class="text-capitalize"> Không có sản phẩm nào !</h5>
+            {% endif %}
         {% else %}
             <div class="m-auto">
                 <h5 class="text-danger m-auto"> Tài khoản không hợp lệ!</h5>

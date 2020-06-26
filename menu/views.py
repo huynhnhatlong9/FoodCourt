@@ -6,7 +6,8 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from django.views.generic import CreateView
+from django.urls import reverse, reverse_lazy
+from django.views.generic import CreateView, UpdateView
 
 from home.models import Product, Cart
 from .filter import FoodFilter
@@ -15,7 +16,12 @@ from .filter import FoodFilter
 class AddFoodView(CreateView):
     model = Product
     template_name = 'menu/addfood.html'
-    fields = ['name', 'category', 'image', 'price']
+    fields = ['name', 'category', 'image', 'price', 'quantity']
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.shop = self.request.user
+        return super().form_valid(form)
 
 
 def menu_view(request):
@@ -116,3 +122,19 @@ def payment(request):
         'foods': food,
     }
     return render(request, 'menu/payment.html', context)
+
+
+def food_store_delete(request, pk):
+    pprint(request.user.id)
+    try:
+        food = Product.objects.get(shop_id=request.user.id, id=pk)
+        food.delete()
+    finally:
+        return redirect('foodstore')
+
+
+class FoodUpdateView(UpdateView):
+    model = Product
+    fields = ['name', 'price','quantity']
+    template_name = 'menu/foodstore-edit.html'
+    success_url = reverse_lazy('foodstore')
