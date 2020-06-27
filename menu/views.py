@@ -118,7 +118,16 @@ def cart_add(request, pk):
 
 def payment(request):
     food = Cart.objects.filter(user=request.user)
+    sum={
+        'price': 0,
+        'quantity':0,
+    }
+    for x in food:
+        sum['price']+=x.food.price
+        sum['quantity']+=x.quantity
+
     context = {
+        'sum':sum,
         'foods': food,
     }
     return render(request, 'menu/payment.html', context)

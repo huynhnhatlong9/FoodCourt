@@ -8,14 +8,15 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 from django.urls import reverse
+from django.utils import timezone
 
 
 class Product(models.Model):
     CATEGORY = (
-        (0, 'Com'),
-        (1, 'Bun'),
-        (2, 'Pho'),
-        (3, 'Mi'),
+        (0, 'Cơm'),
+        (1, 'Bún'),
+        (2, 'Phở'),
+        (3, 'Bánh Mì'),
     )
     shop = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={
         'is_staff': True
@@ -56,3 +57,9 @@ class Cart(models.Model):
 
     def __str__(self):
         return self.user.username
+
+class PayDone(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    food=models.CharField(max_length=200)
+    quantity=models.IntegerField(default=1)
+    date_pay=models.DateTimeField(default=timezone.now())
