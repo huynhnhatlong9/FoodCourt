@@ -19,21 +19,14 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update pro">
-      <change afterPath="$PROJECT_DIR$/templates/menu/foodstore-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/addfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/addfood.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/foodstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/foodstore.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1592804063" />
+                    <option name="lastUsedInstant" value="1593231710" />
                   </RecentBranch>
                 </list>
               </option>
@@ -250,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593103395126</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update pro">
+      <created>1593231552269</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593231552269</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,13 +267,28 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -326,22 +341,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="497" y="156" width="424" height="485" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1593081637103" />
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593190264199">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593231763600">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593190264199" />
-    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593190264199">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593231763600" />
+    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593231763598">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593190264199" />
-    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593190264198">
+    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593231763598" />
+    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593231763597">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593190264198" />
-    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593190264199">
+    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593231763597" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593231763599">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593190264199" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593231763599" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
