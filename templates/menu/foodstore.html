@@ -3,14 +3,17 @@
     <title>BK | Food Store</title>
 {% endblock %}
 {% block container %}
-    <div class="container mt-5 jumbotron">
+    <div class="container mt-5 jumbotron pt-4">
+        <fieldset class="mb-3">
+            <legend class="border-success border-bottom text-success">Food Store</legend>
+        </fieldset>
         {% if user.is_staff %}
             <div class="md-form active-cyan active-cyan-2 mb-3">
                 <form method="get" class="form-inline">
                     <div class="form-group mx-sm-3 mb-2">
                         <input type="text" placeholder="Search..." name="q" class="form-control ">
                     </div>
-                    <button class="btn btn-primary mb-2" type="submit">Tìm kiếm</button>
+                    <button class="btn btn-success mb-2" type="submit">Tìm kiếm</button>
                 </form>
             </div>
             {% if foods.count > 0 %}
@@ -26,12 +29,16 @@
                                             <h5 class="mt-0">{{ x.name }}</h5>
                                             <h6>Price: {{ x.food.price }}</h6>
                                             <h6>Quantity: {{ x.quantity }}</h6>
-                                            <a href="{% url 'foodstore-edit' x.id %}"><button class="btn btn-success btn-sm">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </button> </a>
-                                            <a href="{% url 'foodstore-delete' x.id %}"><button class="btn btn-danger btn-sm">
-                                                <i class="fa fa-trash"></i>
-                                            </button> </a>
+                                            <a href="{% url 'foodstore-edit' x.id %}">
+                                                <button class="btn btn-success btn-sm">
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                </button>
+                                            </a>
+                                            <a href="{% url 'foodstore-delete' x.id %}">
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

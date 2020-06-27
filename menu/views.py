@@ -123,7 +123,7 @@ def payment(request):
         'quantity':0,
     }
     for x in food:
-        sum['price']+=x.food.price
+        sum['price']+=x.food.price*x.quantity
         sum['quantity']+=x.quantity
 
     context = {

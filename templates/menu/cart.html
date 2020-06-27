@@ -3,7 +3,10 @@
     <title>BK | Cart</title>
 {% endblock %}
 {% block container %}
-    <div class="container mt-5 jumbotron">
+    <div class="container mt-5 jumbotron pt-4">
+        <fieldset class="mb-3">
+            <legend class="border-bottom border-success text-success">Giỏ Hàng</legend>
+        </fieldset>
         <div class="list-group">
             <div class="row">
                 {% for x in foods %}
@@ -50,7 +53,7 @@
         {% if foods.count > 0 %}
 
             <a href="{% url 'payment' %}">
-                <button class="btn btn-light" type="submit">Thanh toán</button>
+                <button class="btn btn-success" type="submit">Thanh toán</button>
             </a>
 
         {% endif %}
