@@ -78,6 +78,7 @@ def cart_view(request):
                 obj.save()
                 obj.food.quantity += 1
                 obj.food.save()
+        messages.success(request, f"Trả Thành Công!")
     food = Cart.objects.filter(user=request.user)
     context = {
         'foods': food,
@@ -95,9 +96,11 @@ def cart_reduce(request, pk):
         context = {
             'foods': food,
         }
+        messages.success(request, f"Trả Thành Công!")
         return render(request, 'menu/cart.html', context)
     finally:
         food = Cart.objects.filter(user=request.user)
+        messages.success(request, f"Trả Thành Công!")
         return redirect('cart')
 
 
@@ -113,8 +116,10 @@ def cart_add(request, pk):
         context = {
             'foods': food,
         }
+        messages.success(request,f"Thêm Thành Công!")
         return render(request, 'menu/cart.html', context)
     finally:
+        messages.success(request, f"Thêm Thành Công!")
         return redirect('cart')
 
 
@@ -136,6 +141,7 @@ def payment(request):
                                        price=x.food.price, date_pay=datetime.datetime.now())
             food.delete()
         finally:
+            messages.success(request,f"Thanh Toan Thanh Cong!")
             return redirect('home')
     context = {
         'sum': sum,

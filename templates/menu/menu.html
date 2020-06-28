@@ -27,7 +27,7 @@
                                     <h5 class="mt-0">{{ x.name }}</h5>
                                     <h6>Price: {{ x.price }}</h6>
                                     <h6>Quantity: {{ x.quantity }}</h6>
-                                    {% if user.is_authenticated %}
+                                    {% if user.is_authenticated and not user.is_staff %}
                                         <form method="post">
                                             {% csrf_token %}
                                             <input type="hidden" name="add" value="{{ x.id }}">
