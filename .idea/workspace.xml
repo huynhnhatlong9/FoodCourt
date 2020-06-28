@@ -26,24 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update pro">
-      <change afterPath="$PROJECT_DIR$/templates/login/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu/donhang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/addfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/addfood.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/foodstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/foodstore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/donhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/donhang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/payment.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +143,8 @@
       <workItem from="1593077909920" duration="12490000" />
       <workItem from="1593180864514" duration="7612000" />
       <workItem from="1593267044004" duration="6604000" />
-      <workItem from="1593311507428" duration="4915000" />
+      <workItem from="1593311507428" duration="5060000" />
+      <workItem from="1593332117871" duration="4502000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -305,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593271113881</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update v2">
+      <created>1593316547424</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593316547424</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +358,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="update pro" />
     <MESSAGE value="okk" />
-    <option name="LAST_COMMIT_MESSAGE" value="okk" />
+    <MESSAGE value="update v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update v2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -406,22 +402,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="497" y="156" width="424" height="485" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1593081637103" />
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593315006374">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom" timestamp="1593337186890">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593315006374" />
-    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593315006373">
+    <state width="1320" height="127" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593337186890" />
+    <state width="1320" height="127" key="GridCell.Tab.0.center" timestamp="1593337186889">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593315006373" />
-    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593315006373">
+    <state width="1320" height="127" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593337186889" />
+    <state width="1320" height="127" key="GridCell.Tab.0.left" timestamp="1593337186888">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593315006373" />
-    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593315006373">
+    <state width="1320" height="127" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593337186888" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right" timestamp="1593337186889">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593315006373" />
+    <state width="1320" height="127" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593337186889" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -442,10 +438,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1593078774319" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1593271120504">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1593316555542">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1593271120504" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1593316555542" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />
     </state>

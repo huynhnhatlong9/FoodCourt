@@ -3,13 +3,15 @@ from pprint import pprint
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.db.models.functions import datetime
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.urls import reverse, reverse_lazy
+from django.utils import timezone
 from django.views.generic import CreateView, UpdateView
 
-from home.models import Product, Cart
+from home.models import Product, Cart, PayDone
 from .filter import FoodFilter
 
 
@@ -118,16 +120,25 @@ def cart_add(request, pk):
 
 def payment(request):
     food = Cart.objects.filter(user=request.user)
-    sum={
+    sum = {
         'price': 0,
-        'quantity':0,
+        'quantity': 0,
     }
     for x in food:
-        sum['price']+=x.food.price*x.quantity
-        sum['quantity']+=x.quantity
+        sum['price'] += x.food.price * x.quantity
+        sum['quantity'] += x.quantity
 
+    if request.POST:
+        try:
+            food = Cart.objects.filter(user_id=request.user.id)
+            for x in food:
+                PayDone.objects.create(customer=x.user, vendor=x.food.shop, food=x.food.name, quantity=x.quantity,
+                                       price=x.food.price, date_pay=datetime.datetime.now())
+            food.delete()
+        finally:
+            return redirect('home')
     context = {
-        'sum':sum,
+        'sum': sum,
         'foods': food,
     }
     return render(request, 'menu/payment.html', context)
@@ -144,9 +155,14 @@ def food_store_delete(request, pk):
 
 class FoodUpdateView(UpdateView):
     model = Product
-    fields = ['name', 'price','quantity']
+    fields = ['name', 'price', 'quantity']
     template_name = 'menu/foodstore-edit.html'
     success_url = reverse_lazy('foodstore')
 
+
 def don_hang_view(request):
-    return render(request,'menu/donhang.html')
+    order = PayDone.objects.filter(vendor_id=request.user.id)
+    context = {
+        'orders': order
+    }
+    return render(request, 'menu/donhang.html', context)

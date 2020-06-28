@@ -60,18 +60,35 @@ class Cart(models.Model):
 
 
 class PayDone(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    customer = models.ForeignKey(User, null=True, on_delete=models.CASCADE, limit_choices_to={
+        'is_staff': False
+    }, related_name='customer')
+    vendor = models.ForeignKey(User, null=True, on_delete=models.CASCADE, limit_choices_to={
+        'is_staff': True
+    }, related_name='vendor')
     food = models.CharField(max_length=200)
     quantity = models.IntegerField(default=1)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_pay = models.DateTimeField(default=timezone.now())
 
+    def __str__(self):
+        return self.food
+
+    class Meta:
+        ordering = ('-date_pay',)
+
 
 class OrderSuccess(models.Model):
-    store = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={
+    customer = models.ForeignKey(User, null=True, on_delete=models.CASCADE, limit_choices_to={
+        'is_staff': False
+    }, related_name='customer_order')
+    vendor = models.ForeignKey(User, null=True, on_delete=models.CASCADE, limit_choices_to={
         'is_staff': True,
-    })
+    }, related_name='vendor_order')
     food = models.CharField(max_length=200)
     quantity = models.IntegerField(default=1)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_done = models.DateTimeField(default=timezone.now())
+
+    def __str__(self):
+        return self.food

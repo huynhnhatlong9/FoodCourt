@@ -1,13 +1,13 @@
 {% extends 'home/base.html' %}
 {% block title %}
-<title>BK | Payment</title>
+    <title>BK | Payment</title>
 {% endblock %}
 {% block container %}
     <div class="container jumbotron mt-3 w-75 pt-4">
-    <fieldset class="mb-3 ml-2">
-        <legend class="text-success font-weight border-bottom border-success ">Hoá Đơn</legend>
-    </fieldset>
-        <table class="table table-{1:striped|sm|bordered|hover|inverse} table-inverse table-bordered" >
+        <fieldset class="mb-3 ml-2">
+            <legend class="text-success font-weight border-bottom border-success ">Hoá Đơn</legend>
+        </fieldset>
+        <table class="table table-{1:striped|sm|bordered|hover|inverse} table-inverse table-bordered">
             <thead class="thead-inverse|thead-default table-success">
             <tr>
                 <th>Name</th>
@@ -17,19 +17,22 @@
             </thead>
             <tbody>
             {% for food in foods %}
-            <tr>
-                <td scope="row">{{ food.food.name }}</td>
-                <td>{{ food.quantity }}</td>
-                <td>{{food.food.price}}</td>
-            </tr>
+                <tr>
+                    <td scope="row">{{ food.food.name }}</td>
+                    <td>{{ food.quantity }}</td>
+                    <td>{{ food.food.price }}</td>
+                </tr>
             {% endfor %}
             <tr class="table-active">
                 <td scope="row"><strong>Tổng</strong></td>
                 <td><strong>{{ sum.quantity }}</strong></td>
-                <td><strong>{{sum.price}}</strong></td>
+                <td><strong>{{ sum.price }}</strong></td>
             </tr>
             </tbody>
         </table>
-        <button class="btn btn-success float-md-right">Thanh Toán</button>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-success float-md-right" type="submit">Thanh Toán</button>
+        </form>
     </div>
 {% endblock %}
