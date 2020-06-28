@@ -8,7 +8,7 @@
             <legend class="border-success border-bottom text-success">Food Store</legend>
         </fieldset>
         {% if user.is_staff %}
-            <div class="md-form active-cyan active-cyan-2 mb-3">
+            <div class="card-body">
                 <form method="get" class="form-inline">
                     <div class="form-group mx-sm-3 mb-2">
                         <input type="text" placeholder="Search..." name="q" class="form-control ">
@@ -17,7 +17,7 @@
                 </form>
             </div>
             {% if foods.count > 0 %}
-                <div class="list-group">
+                <div class="card-body">
                     <div class="row">
                         {% for x in foods %}
                             <div class="col-md-4">
@@ -27,9 +27,9 @@
                                              style="width: 100px; height: 100px">
                                         <div class="media-body" style="width: 90%">
                                             <h5 class="mt-0">{{ x.name }}</h5>
-                                            <h6>Price: {{ x.food.price }}</h6>
+                                            <h6>Price: {{ x.price }}</h6>
                                             <h6>Quantity: {{ x.quantity }}</h6>
-                                            <a href="{% url 'foodstore-edit' x.id %}">
+                                            <a href="{% url 'foodstore-edit' x.id %}" style="text-decoration: none">
                                                 <button class="btn btn-success btn-sm">
                                                     <i class="fa fa-pencil-square-o"></i>
                                                 </button>

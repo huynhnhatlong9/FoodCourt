@@ -1,0 +1,35 @@
+{% extends 'home/base.html' %}
+{% block title %}
+    <title>BK | Profile</title>
+{% endblock %}
+{% block container %}
+    <div class="container jumbotron w-50 mt-4 pt-4">
+        <fieldset class="border-bottom border-success mb-3">
+            <legend class="text-success">Thông tin cá nhân</legend>
+        </fieldset>
+        <table class="table table-bordered bg-light jumbotron">
+            <tbody>
+            <tr class="table-active">
+                <td><strong>User: </strong></td>
+                <td><strong>{{ profile.username }}</strong></td>
+            </tr>
+            <tr class="">
+                <td><strong>Full name: </strong></td>
+                <td><strong>{{ profile.get_full_name }}</strong></td>
+            </tr>
+            <tr class="">
+                <td><strong>Email: </strong></td>
+                <td><strong>{{ profile.email }}</strong></td>
+            </tr>
+            <tr class="">
+                <td><strong>Date Joined: </strong></td>
+                <td><strong>{{ profile.date_joined }}</strong></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="border-top pt-3">
+            <small class="text-muted float-md-right">Cập nhật thông tin cá nhân? <a href="{% url 'accountupdate' %}">Cập
+                nhật</a></small>
+        </div>
+    </div>
+{% endblock %}

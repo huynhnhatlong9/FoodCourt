@@ -27,7 +27,10 @@ from menu import views
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('register/', login_view.register, name='register'),
+                  path('profile/', login_view.AccountDetailView.as_view(), name='profile'),
+                  path('update/', login_view.AccountUpdateView.as_view(), name='accountupdate'),
                   path('menu/', include('menu.urls')),
+                  path('donhang', views.don_hang_view, name='donhang'),
                   path('cart/', include('order.urls')),
                   url('login/', LoginView.as_view(template_name='login/login.html'), name='login'),
                   url('logout/', LogoutView.as_view(template_name='login/logout.html'), name='logout'),

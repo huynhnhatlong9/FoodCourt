@@ -33,7 +33,7 @@ class Product(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    quantity=models.IntegerField(default=1)
+    quantity = models.IntegerField(default=1)
 
     class Meta:
         ordering = ('name',)
@@ -58,8 +58,20 @@ class Cart(models.Model):
     def __str__(self):
         return self.user.username
 
+
 class PayDone(models.Model):
-    user=models.ForeignKey(User,on_delete=models.CASCADE)
-    food=models.CharField(max_length=200)
-    quantity=models.IntegerField(default=1)
-    date_pay=models.DateTimeField(default=timezone.now())
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    food = models.CharField(max_length=200)
+    quantity = models.IntegerField(default=1)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    date_pay = models.DateTimeField(default=timezone.now())
+
+
+class OrderSuccess(models.Model):
+    store = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={
+        'is_staff': True,
+    })
+    food = models.CharField(max_length=200)
+    quantity = models.IntegerField(default=1)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    date_done = models.DateTimeField(default=timezone.now())

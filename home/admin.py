@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from .models import Product, Cart, PayDone
+from .models import Product, Cart, PayDone, OrderSuccess
 
 # Register your models here.
 
@@ -9,3 +9,4 @@ from .models import Product, Cart, PayDone
 admin.site.register(Product)
 admin.site.register(Cart)
 admin.site.register(PayDone)
+admin.site.register(OrderSuccess)

@@ -147,3 +147,6 @@ class FoodUpdateView(UpdateView):
     fields = ['name', 'price','quantity']
     template_name = 'menu/foodstore-edit.html'
     success_url = reverse_lazy('foodstore')
+
+def don_hang_view(request):
+    return render(request,'menu/donhang.html')
