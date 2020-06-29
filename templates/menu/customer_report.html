@@ -1,45 +1,35 @@
 {% extends 'home/base.html' %}
+{% load tz %}
 {% block title %}
-    <title>BK | Order</title>
+<title>BK | Report</title>
 {% endblock %}
 {% block container %}
-    <div class="container jumbotron mt-3 pt-3 bg-light">
+<div class="container jumbotron mt-3 pt-3 bg-light">
         <fieldset class="border-bottom border-success mb-3">
-            <legend class="text-success">Danh sách đơn đặt hàng</legend>
+            <legend class="text-success">Thống Kê Mua Hàng</legend>
         </fieldset>
         <table class="table table-{1:striped|sm|bordered|hover|inverse} table-inverse table-bordered">
             <thead class="thead-inverse|thead-default table-bordered table-success">
             <tr>
                 <th>Name</th>
-                <th>Customer</th>
+                <th>Vendor</th>
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Time</th>
-                <th>Done</th>
             </tr>
             </thead>
             <tbody>
             {% for order in orders %}
                 <tr>
                     <td scope="row">{{ order.food }}</td>
-                    <td>{{ order.customer }}</td>
+                    <td>{{ order.vendor }}</td>
                     <td>{{ order.quantity }}</td>
                     <td>{{ order.price }}</td>
-                    <td>{{ order.date_pay }}</td>
-                    <td>
-                        <form method="post">
-                            {% csrf_token %}
-                            <input name="pk" value="{{ order.id }} " type="hidden">
-                            <button class="btn btn-success btn-sm"><i class="fa fa-check"></i></button>
-                        </form>
-                    </td>
+                    <td>{{ order.date_done }}</td>
                 </tr>
             {% endfor %}
 
             </tbody>
         </table>
-        {% for order in orders %}
-        {% endfor %}
-
     </div>
 {% endblock %}

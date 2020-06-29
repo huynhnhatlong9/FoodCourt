@@ -46,9 +46,10 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ user.get_username }}
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="{% url 'foodstore' %}">Food Store</a>
                             <a class="dropdown-item" href="{% url 'addfood' %}">Add Food</a>
+                            <a class="dropdown-item" href="{% url 'report' %}">Report</a>
                             <a class="dropdown-item" href="{% url 'logout' %}">Đăng xuất</a>
                         </div>
                     </div>
@@ -66,6 +67,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="{% url 'profile' %}">Thông Tin Tài Khoản</a>
                             <a class="dropdown-item" href="{% url 'accountupdate' %}">Chỉnh Sửa Thông Tin</a>
+                            <a class="dropdown-item" href="{% url 'customer-report' %}">Thống Kê Đã Mua</a>
                             <a class="dropdown-item" href="{% url 'logout' %}">Đăng xuất</a>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ from django.urls import reverse, reverse_lazy
 from django.utils import timezone
 from django.views.generic import CreateView, UpdateView
 
-from home.models import Product, Cart, PayDone
+from home.models import Product, Cart, PayDone, OrderSuccess
 from .filter import FoodFilter
 
 
@@ -116,7 +116,7 @@ def cart_add(request, pk):
         context = {
             'foods': food,
         }
-        messages.success(request,f"Thêm Thành Công!")
+        messages.success(request, f"Thêm Thành Công!")
         return render(request, 'menu/cart.html', context)
     finally:
         messages.success(request, f"Thêm Thành Công!")
@@ -141,7 +141,7 @@ def payment(request):
                                        price=x.food.price, date_pay=datetime.datetime.now())
             food.delete()
         finally:
-            messages.success(request,f"Thanh Toan Thanh Cong!")
+            messages.success(request, f"Thanh Toan Thanh Cong!")
             return redirect('home')
     context = {
         'sum': sum,
@@ -167,8 +167,37 @@ class FoodUpdateView(UpdateView):
 
 
 def don_hang_view(request):
+    if request.POST:
+        try:
+            obj = PayDone.objects.get(id=request.POST['pk'])
+            OrderSuccess.objects.create(vendor=obj.vendor, customer=obj.customer, food=obj.food,
+                                        quantity=obj.quantity, price=obj.price, date_done=timezone.now())
+            obj.delete()
+        finally:
+            order = PayDone.objects.filter(vendor_id=request.user.id)
+            context = {
+                'orders': order
+            }
+            return render(request, 'menu/donhang.html', context)
+
     order = PayDone.objects.filter(vendor_id=request.user.id)
     context = {
         'orders': order
     }
     return render(request, 'menu/donhang.html', context)
+
+
+def report_view(request):
+    report = OrderSuccess.objects.filter(vendor_id=request.user.id)
+    context = {
+        'orders': report,
+    }
+    return render(request, 'menu/report.html', context)
+
+
+def customer_report_view(request):
+    report = OrderSuccess.objects.filter(customer_id=request.user.id)
+    context = {
+        'orders': report,
+    }
+    return render(request, 'menu/customer_report.html', context)
