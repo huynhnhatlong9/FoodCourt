@@ -45,6 +45,15 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse('addfood')
 
+    def is_available(self):
+        return self.quantity > 0
+
+    def get_item_by_vendor(self, vendor_id):
+        try:
+            return self.objects.filter(shop_id=vendor_id)
+        except:
+            return None
+
 
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -57,6 +66,18 @@ class Cart(models.Model):
 
     def __str__(self):
         return self.user.username
+
+    def get_item_by_customer(self, customer_id):
+        try:
+            return self.objects.filter(user_id=customer_id)
+        except:
+            return None
+
+    def get_item_by_foodname(self, foodname):
+        try:
+            return self.objects.filter(food=foodname)
+        except:
+            return None
 
 
 class PayDone(models.Model):
@@ -77,6 +98,36 @@ class PayDone(models.Model):
     class Meta:
         ordering = ('-date_pay',)
 
+    def get_item_by_id(self, id):
+        try:
+            return self.objects.get(id=id)
+        except:
+            return None
+
+    def get_item_by_customer(self, customer_id):
+        try:
+            return self.objects.filter(id=customer_id)
+        finally:
+            return None
+
+    def get_item_by_vendor(self, vendor_id):
+        try:
+            return self.objects.filter(vendor_id=vendor_id)
+        except:
+            return None
+
+    def get_item_by_name(self, name):
+        try:
+            return self.objects.filter(food=name)
+        except:
+            return None
+
+    def get_item_by_price(self, price):
+        try:
+            return self.objects.filter(price=price)
+        except:
+            return None
+
 
 class OrderSuccess(models.Model):
     customer = models.ForeignKey(User, null=True, on_delete=models.CASCADE, limit_choices_to={
@@ -95,3 +146,33 @@ class OrderSuccess(models.Model):
 
     def __str__(self):
         return self.food
+
+    def get_item_by_id(self, id):
+        try:
+            return self.objects.get(id=id)
+        except:
+            return None
+
+    def get_item_by_customer(self, customer_id):
+        try:
+            return self.objects.filter(id=customer_id)
+        finally:
+            return None
+
+    def get_item_by_vendor(self, vendor_id):
+        try:
+            return self.objects.filter(vendor_id=vendor_id)
+        except:
+            return None
+
+    def get_item_by_name(self, name):
+        try:
+            return self.objects.filter(food=name)
+        except:
+            return None
+
+    def get_item_by_price(self, price):
+        try:
+            return self.objects.filter(price=price)
+        except:
+            return None

@@ -151,7 +151,6 @@ def payment(request):
 
 
 def food_store_delete(request, pk):
-    pprint(request.user.id)
     try:
         food = Product.objects.get(shop_id=request.user.id, id=pk)
         food.delete()
@@ -188,7 +187,7 @@ def don_hang_view(request):
 
 
 def report_view(request):
-    report = OrderSuccess.objects.filter(vendor_id=request.user.id)
+    report = OrderSuccess.get_item_by_vendor(OrderSuccess,request.user.id)
     context = {
         'orders': report,
     }
