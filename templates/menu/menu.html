@@ -1,46 +1,40 @@
-{% extends 'home/base.html' %}
-{% load crispy_forms_filters %}
-{% load static %}
-{% block title %}
-    <title>BK | Menu</title>
-{% endblock %}
-{% block container %}
-    <div class="container mt-5 jumbotron pt-4">
-        <fieldset class="mb-3">
-            <legend class="border-bottom border-success text-success">Menu</legend>
-        </fieldset>
-        <div class="md-form active-cyan active-cyan-2 mb-3">
-            <form method="get" class="form-inline">
-                {{ filter.form|crispy }}
-                <button class="btn btn-success ml-md-4" type="submit">Tìm kiếm</button>
-            </form>
-        </div>
-        <div class="list-group">
-            <div class="row">
-                {% for x in foods %}
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="media card-body">
-                                <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
-                                     style="width: 100px; height: 100px">
-                                <div class="media-body" style="width: 90%">
-                                    <h5 class="mt-0">{{ x.name }}</h5>
-                                    <h6>Price: {{ x.price }}</h6>
-                                    <h6>Quantity: {{ x.quantity }}</h6>
-                                    {% if user.is_authenticated and not user.is_staff %}
-                                        <form method="post">
-                                            {% csrf_token %}
-                                            <input type="hidden" name="add" value="{{ x.id }}">
-                                            <input type="submit" formmethod="post" value="Add" class="btn btn-success">
-                                        </form>
-                                    {% endif %}
-                                </div>
-                            </div>
+{% extends 'home/base.html' %} {% load crispy_forms_filters %} {% load static %} {% block title %}
+<title>BK | Menu</title>
+{% endblock %} {% block container %}
+<div class="container mt-5 jumbotron pt-4">
+    <fieldset class="mb-3">
+        <legend class="border-bottom border-success text-success">Menu</legend>
+    </fieldset>
+    <div class="md-form active-cyan active-cyan-2 mb-3">
+        <form method="get" class="form-inline">
+            {{ filter.form|crispy }}
+            <button class="btn btn-success ml-md-4" type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+    <div class="list-group">
+        <div class="row">
+            {% for x in foods %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="media card-body">
+                        <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..." style="width: 100px; height: 100px">
+                        <div class="media-body" style="width: 90%">
+                            <h6 class="mt-0"><strong>{{ x.name }}</strong></h6>
+                            <small>Price: {{ x.price }}</small> <br>
+                            <small>Quantity: {{ x.quantity }}</small><br>
+                            <small>Vendor: {{ x.shop.username }}</small> {% if user.is_authenticated and not user.is_staff %}
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="add" value="{{ x.id }}">
+                                <input type="submit" formmethod="post" value="Add" class="btn btn-success">
+                            </form>
+                            {% endif %}
                         </div>
                     </div>
-                {% endfor %}
+                </div>
             </div>
+            {% endfor %}
         </div>
     </div>
-    <br><br>
-{% endblock %}
+</div>
+<br><br> {% endblock %}
