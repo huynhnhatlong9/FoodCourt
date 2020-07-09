@@ -26,14 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_24_2020_1_00_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_24_2020_1_00_AM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git" beforeDir="false" />
     </list>
     <list id="c1ea5923-9707-416c-856e-4da0e0aa91eb" name="update models.py" comment="update models.py">
       <changelist_data name="JapanDragon" email="huynhnhatlong9@gmail.com" date="1593012015000" />
@@ -81,6 +75,13 @@
           </list>
         </option>
       </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/huynhnhatlong9/FoodCourt.git" />
+      </set>
     </option>
   </component>
   <component name="ProjectId" id="1dXZEprdv2LbcgAbumBJGTaJH7S" />
@@ -152,6 +153,7 @@
       <workItem from="1593311507428" duration="5060000" />
       <workItem from="1593332117871" duration="9513000" />
       <workItem from="1593963769780" duration="2334000" />
+      <workItem from="1594276421270" duration="403000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -314,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593337566580</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="test">
+      <created>1594276491068</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1594276491068</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +382,8 @@
     <MESSAGE value="update pro" />
     <MESSAGE value="update v2" />
     <MESSAGE value="okk" />
-    <option name="LAST_COMMIT_MESSAGE" value="okk" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -404,6 +414,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="416" y="147" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1366.740@0.28.1366.740" timestamp="1593273502983" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594276802713">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594276802713" />
     <state x="100" y="128" width="1166" height="540" key="DiffContextDialog" timestamp="1592649072185">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -412,10 +426,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="555" y="140" width="309" height="517" key="EnvironmentVariablesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592649157169" />
-    <state x="497" y="126" width="424" height="485" key="FileChooserDialogImpl" timestamp="1593957999602">
+    <state x="497" y="126" width="424" height="485" key="FileChooserDialogImpl" timestamp="1594276796507">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="497" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593957999602" />
+    <state x="497" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594276796507" />
     <state x="497" y="156" width="424" height="485" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1593081637103" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593958060254">
       <screen x="0" y="0" width="1366" height="728" />
@@ -465,9 +479,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.28.1366.740@0.28.1366.740" timestamp="1592759932023" />
-    <state x="454" y="313" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593095266417">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="454" y="280" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594276784615">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="454" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1594276784615" />
     <state x="454" y="313" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1366.740@0.28.1366.740" timestamp="1593095266417" />
     <state x="408" y="92" width="539" height="613" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592649010582">
       <screen x="0" y="28" width="1366" height="740" />
@@ -477,9 +492,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="354" y="186" width="663" height="425" key="git4idea.merge.GitPullDialog/0.28.1366.740@0.28.1366.740" timestamp="1592804102812" />
-    <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592656900531">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="442" y="266" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594276593199">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="442" y="266" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594276593199" />
     <state x="442" y="298" width="472" height="200" key="git4idea.remote.GitConfigureRemotesDialog/0.28.1366.740@0.28.1366.740" timestamp="1592656900531" />
     <state x="400" y="172" key="jetbrains.nodejs.interpreters-dialog" timestamp="1593958043775">
       <screen x="0" y="0" width="1366" height="728" />
