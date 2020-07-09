@@ -187,7 +187,7 @@ def don_hang_view(request):
 
 
 def report_view(request):
-    report = OrderSuccess.get_item_by_vendor(OrderSuccess,request.user.id)
+    report = OrderSuccess.get_item_by_vendor(OrderSuccess, request.user.id)
     context = {
         'orders': report,
     }
@@ -200,3 +200,7 @@ def customer_report_view(request):
         'orders': report,
     }
     return render(request, 'menu/customer_report.html', context)
+
+
+def intro_view(request):
+    return render(request, 'home/intro.html')

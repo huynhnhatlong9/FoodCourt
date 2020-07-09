@@ -29,6 +29,7 @@
             <div class="navbar-nav">
                 <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
                 <a href="{% url 'menu' %}" class="nav-item nav-link">Menu</a>
+                <a href="{% url 'intro' %}" class="nav-item nav-link">Giới Thiệu</a>
             </div>
             <div class="navbar-nav ml-auto">
                 {% if user.is_authenticated %} {% if user.is_staff %}
