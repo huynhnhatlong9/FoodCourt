@@ -25,8 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update">
+    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update intro">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/home/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/home/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/intro.html" afterDir="false" />
     </list>
     <list id="c1ea5923-9707-416c-856e-4da0e0aa91eb" name="update models.py" comment="update models.py">
       <changelist_data name="JapanDragon" email="huynhnhatlong9@gmail.com" date="1593012015000" />
@@ -98,8 +101,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\PycharmProjects\Food\static\home\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Food" type="Python.DjangoServer" factoryName="Django server">
@@ -154,6 +163,9 @@
       <workItem from="1593963769780" duration="2334000" />
       <workItem from="1594276421270" duration="403000" />
       <workItem from="1594276918840" duration="334000" />
+      <workItem from="1594305766853" duration="2266000" />
+      <workItem from="1594346800025" duration="5811000" />
+      <workItem from="1594356894060" duration="2302000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -390,7 +402,8 @@
     <MESSAGE value="update v2" />
     <MESSAGE value="okk" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="update intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="update intro" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="313" width="187" height="179" key="#Custom_Plugin_Repositories" timestamp="1592649568355">
@@ -409,17 +422,19 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="367" y="235" width="551" height="336" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.28.1366.740@0.28.1366.740" timestamp="1592576694263" />
-    <state x="278" y="59" width="873" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593081644035">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="313" y="35" width="873" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594306067857">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="313" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594306067857" />
     <state x="278" y="59" width="873" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1593081644035" />
     <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592574294892">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1592574294892" />
-    <state x="416" y="147" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593273502983">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="468" y="133" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594351061657">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="468" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594351061657" />
     <state x="416" y="147" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1366.740@0.28.1366.740" timestamp="1593273502983" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594276802713">
       <screen x="0" y="0" width="1366" height="728" />
@@ -438,25 +453,29 @@
     </state>
     <state x="497" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594276796507" />
     <state x="497" y="156" width="424" height="485" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1593081637103" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593958060254">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1594322123751">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593958060254" />
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594322123751" />
     <state width="1320" height="242" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1593345935001" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593958060254">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1594322123751">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593958060254" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594322123751" />
     <state width="1320" height="242" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1593345935001" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593958060254">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1594322123751">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593958060254" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594322123751" />
     <state width="1320" height="242" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1593345935000" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593958060254">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1594322123751">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593958060254" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594322123751" />
     <state width="1320" height="242" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1593345935001" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1592588650555">
       <screen x="0" y="28" width="1366" height="740" />
@@ -474,9 +493,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1320" height="217" key="GridCell.Tab.1.right/0.28.1366.740@0.28.1366.740" timestamp="1592588650554" />
-    <state x="137" y="37" width="1022" height="731" key="SettingsEditor" timestamp="1593078774319">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="154" y="10" width="1022" height="731" key="SettingsEditor" timestamp="1594306024173">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="154" y="10" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594306024173" />
     <state x="137" y="37" width="1022" height="731" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1593078774319" />
     <state x="278" y="104" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1594277135482">
       <screen x="0" y="0" width="1366" height="728" />
@@ -487,10 +507,11 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.28.1366.740@0.28.1366.740" timestamp="1592759932023" />
-    <state x="454" y="280" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594276784615">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="511" y="317" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594305786217">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="454" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1594276784615" />
+    <state x="511" y="317" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1594305786217" />
     <state x="454" y="313" width="448" height="173" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1366.740@0.28.1366.740" timestamp="1593095266417" />
     <state x="408" y="92" width="539" height="613" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592649010582">
       <screen x="0" y="28" width="1366" height="740" />
