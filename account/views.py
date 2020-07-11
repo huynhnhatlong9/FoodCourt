@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
-from django.contrib.auth import views as auth_views
+
 # Create your views here.
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, UpdateView

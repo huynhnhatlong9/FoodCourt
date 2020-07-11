@@ -1,8 +1,157 @@
 {% extends 'home/base.html' %}
 {% load static %}
 {% block title %}
-<title>BK | Intro</title>
+    <title>BK | Intro</title>
+{% endblock %}
+{% block extraheader %}
+<link rel="stylesheet" type="text/css" href="{% static 'login/CSS/style.css' %}" />
 {% endblock %}
 {% block container %}
+    <br><br>
 
+    <div class="container jumbotron">
+    <fieldset class="mt-0 mb-4">
+        <legend class="border-bottom border-success text-success">Member</legend>
+    </fieldset>
+
+            <div class="container-fluid" style="min-height:95%">
+                <div class="row">
+                    <div class="col-sm-1">
+
+                    </div>
+                    <div class="col-sm-10">
+                        <center><h5>These are the people working hard everyday to provide you with quality ideas and
+                            great
+                            concepts</h5></center>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+
+                </div>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bs-sliderbar">
+                            <ul class="nav flex-column">
+                                <br>
+                                <center><img src="{% static 'home/images/Long.jpg' %}" class="responsive-imp border-secondary border"
+                                             style="height:150px;width: 150px;border-radius: 150px/100%" /></center>
+                                <div class="container-fluid">
+                                    <br>
+                                    <small><strong>
+                                        Huynh Nhat Long
+                                    </strong>
+                                    </small>
+
+                                    <br>
+                                    <a href="https://www.facebook.com/profile.php?id=100005332099235" class="ml-3"><i
+                                            class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="ml-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <br><br>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bs-sliderbar">
+                            <ul class="nav flex-column">
+                                <br>
+                                <center><img src="{% static 'home/images/Linh.jpg' %}" class="responsive-imp border-secondary border"
+                                             style="height:150px;width: 150px;border-radius: 150px/100%" /></center>
+                                <div class="container-fluid">
+                                    <br>
+                                    <small class="ml-2">
+                                        <strong>Nguyen Thi Linh</strong>
+                                    </small>
+
+                                    <br>
+                                    <a href="https://www.facebook.com/profile.php?id=100007831608463" class="ml-3"><i
+                                            class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="ml-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <br><br>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bs-sliderbar">
+                            <ul class="nav flex-column">
+                                <br>
+                                <center><img src="{% static 'home/images/Loc.PNG' %}" class="responsive-imp border-secondary border"
+                                             style="height:150px;width: 150px;border-radius: 150px/100%" /></center>
+                                <div class="container-fluid">
+                                    <br>
+                                    <small>
+                                        <strong>Truong Thanh Loc</strong>
+                                    </small>
+                                    <br>
+                                    <a href="https://www.facebook.com/thanhloc2031" class="ml-3"><i
+                                            class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="ml-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <br><br>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bs-sliderbar">
+                            <ul class="nav flex-column">
+                                <br>
+                                <div style=""><img src="{% static 'home/images/Vu.PNG' %}" class="responsive-imp border-secondary border"
+                                             style="height: 150px; width: 150px;border-radius: 150px/100%" /></div>
+                                <div class="container-fluid">
+                                    <br>
+                                    <small class="ml-3">
+                                        <strong>Le Tuan Vu</strong>
+                                    </small>
+                                    <br>
+                                    <a href="https://www.facebook.com/tuanvu.hcmut" class="ml-3"><i
+                                            class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="ml-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <br><br>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="bs-sliderbar">
+                            <ul class="nav flex-column">
+                                <br>
+                                <center><img src="{% static 'home/images/Ngoc.PNG   ' %}" class="responsive-imp border-secondary border"
+                                             style="height:150px;width: 150px;border-radius: 150px/100%" /></center>
+                                <div class="container-fluid">
+                                    <br>
+                                    <small class="ml-2">
+                                        <strong>Truong Tan Ngoc</strong>
+                                    </small>
+                                    <br>
+                                    <a href="https://www.facebook.com/profile.php?id=100005168383751" class="ml-3"><i
+                                            class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="ml-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <br><br>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
 {% endblock %}

@@ -1,33 +1,32 @@
 {% extends 'home/base.html' %} {% load crispy_forms_filters %} {% load static %} {% block title %}
-    <title>BK | Login</title>
-{% endblock %} {% block container %}
-    <div class="container mt-5 jumbotron pt-3 w-25 bg-light pb-3">
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-            <div>
-                <div class="content-section pr-0">
-                    <form method="POST">
-                        {% csrf_token %}
-                        <fieldset class="form-group" >
-                            <legend class="border-bottom mb-3">Đăng nhập</legend>
-                            {{ form|crispy }}
-                        </fieldset>
+<title>BK | Login</title>
+{% endblock %} {% block extraheader %}
+<link rel="stylesheet" type="text/css" href="{% static 'login/CSS/style.css' %}" /> {% endblock %} {% block container %}
+<div class="container mt-5 jumbotron pt-3 w-25 pb-3 bg-light">
+    <div class="row">
+        <div>
+            <div class="content-section">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-3">Đăng nhập</legend>
+                        {{ form|crispy }}
+                    </fieldset>
 
-                        <div class="form-group">
-                            <button class="btn btn-outline-primary mb-2" type="submit">Đăng nhập</button>
-                        </div>
+                    <div class="form-group">
+                        <button class="btn btn-outline-primary mb-2" type="submit">Đăng nhập</button>
+                    </div>
 
-                    </form>
-                    <div class="border-top pt-3">
-                        <small class="text-muted">
+                </form>
+                <div class="border-top pt-3">
+                    <small class="text-muted">
                             Bạn chưa có tài khoản ?? <a href="{% url 'register' %}">Đăng kí</a>
                         </small>
-                    </div>
                 </div>
             </div>
-
         </div>
+
     </div>
+</div>
 
 {% endblock %}

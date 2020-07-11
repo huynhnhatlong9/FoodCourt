@@ -16,10 +16,10 @@
                                 <img src="{{ x.food.image.url }}" class="mr-3 ml-4" alt="..."
                                      style="width: 100px; height: 100px">
                                 <div class="media-body" style="width: 90%">
-                                    <h6 class="mt-0"><strong>{{ x.food.name }}</strong></h6>
-                                    <small>Price: {{ x.food.price }}</small> <br>
-                                    <small>Quantity: {{ x.quantity }}</small><br>
-                                    <small>Vendor: {{ x.food.shop.username }}</small>
+                                    <h5 class="mt-0">{{ x.food.name }}</h5>
+                                    <h6>Price: {{ x.food.price }}</h6>
+                                    <h6>Quantity: {{ x.quantity }}</h6>
+
                                     <form action="" method="post">
                                         {% csrf_token %}
                                         <input type="hidden" name="cl" value="{{ x.id }}">
