@@ -60,7 +60,7 @@ class Cart(models.Model):
     food = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     date_buy = models.DateTimeField(default=datetime.now())
-
+    notice = models.TextField(blank=True,default='')
     class Meta:
         ordering = ('user',)
 
@@ -91,6 +91,7 @@ class PayDone(models.Model):
     quantity = models.IntegerField(default=1)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_pay = models.DateTimeField(default=timezone.now())
+    notice = models.TextField(blank=True,default='')
 
     def __str__(self):
         return self.food

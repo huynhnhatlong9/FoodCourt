@@ -4,11 +4,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.db.models.functions import datetime
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.urls import reverse, reverse_lazy
 from django.utils import timezone
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import CreateView, UpdateView
 
 from home.models import Product, Cart, PayDone, OrderSuccess
@@ -45,6 +47,7 @@ def menu_view(request):
                 obj = Cart.objects.all().get(food_id=add, user_id=request.user.id)
                 obj.food.quantity -= 1
                 obj.food.save()
+            messages.success(request, 'Đã thêm vào giỏ hàng!')
     context = {
         'foods': food,
         'filter': food_filter,
@@ -104,6 +107,20 @@ def cart_reduce(request, pk):
         return redirect('cart')
 
 
+@csrf_exempt
+def cart_add_message(request):
+    if request.is_ajax():
+        pk = request.POST.get('pk',None)
+        text = request.POST.get('text',None)
+        try:
+            obj = Cart.objects.get(id=pk)
+            obj.notice = text
+            obj.save()
+        except:
+            None
+        return JsonResponse({}, status=200)
+
+
 def cart_add(request, pk):
     try:
         food = Cart.objects.get(id=pk)
@@ -138,7 +155,8 @@ def payment(request):
             food = Cart.objects.filter(user_id=request.user.id)
             for x in food:
                 PayDone.objects.create(customer=x.user, vendor=x.food.shop, food=x.food.name, quantity=x.quantity,
-                                       price=x.food.price, date_pay=datetime.datetime.now())
+                                       price=x.food.price, date_pay=datetime.datetime.now(),
+                                       notice=x.notice)
             food.delete()
         finally:
             messages.success(request, f"Thanh Toan Thanh Cong!")

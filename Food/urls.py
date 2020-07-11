@@ -34,6 +34,7 @@ urlpatterns = [
                   path('customer-report/', views.customer_report_view, name='customer-report'),
                   path('report/', views.report_view, name='report'),
                   path('cart/', include('order.urls')),
+
                   path('intro/', views.intro_view, name='intro'),
                   url('login/', LoginView.as_view(template_name='login/login.html'), name='login'),
                   url('logout/', LogoutView.as_view(template_name='login/logout.html'), name='logout'),

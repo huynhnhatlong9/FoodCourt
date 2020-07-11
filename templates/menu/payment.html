@@ -13,6 +13,7 @@
                 <th>Name</th>
                 <th>Quantity</th>
                 <th>Price</th>
+                <th>Note</th>
             </tr>
             </thead>
             <tbody>
@@ -21,12 +22,71 @@
                     <td scope="row">{{ food.food.name }}</td>
                     <td>{{ food.quantity }}</td>
                     <td>{{ food.food.price }}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                                data-whatever="@mdo"><i class="fa fa-pencil-square-o"></i><small>Note</small>
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div id="error" hidden>
+                                                <span class="text-danger">Trong!</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary" id="{{ food.id }}">Send message
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
+
+                <script>
+                    $('#'+{{ food.id }}).on('click', function (event) {
+                        if ($('#message-text').val() != '') {
+                            $.ajax({
+                                url: "{% url 'card-add-message' %}",
+                                type: 'post',
+                                data: {
+                                    pk: {{ food.id }},
+                                    text: $('#message-text').val(),
+                                },
+                                success: function (response) {
+                                    $('#message-text').val("");
+                                    $('#exampleModal').modal('hide');
+                                    toastr.success('Thêm ghi chú thành công!');
+                                }
+                            })
+
+                        } else {
+                            alert('NULL!');
+                        }
+                    })
+                </script>
             {% endfor %}
             <tr class="table-active">
                 <td scope="row"><strong>Tổng</strong></td>
                 <td><strong>{{ sum.quantity }}</strong></td>
                 <td><strong>{{ sum.price }}</strong></td>
+                <td></td>
             </tr>
             </tbody>
         </table>
@@ -36,3 +96,4 @@
         </form>
     </div>
 {% endblock %}
+

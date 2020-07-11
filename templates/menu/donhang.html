@@ -15,6 +15,7 @@
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Time</th>
+                <th>Notice</th>
                 <th>Done</th>
             </tr>
             </thead>
@@ -26,6 +27,9 @@
                     <td>{{ order.quantity }}</td>
                     <td>{{ order.price }}</td>
                     <td>{{ order.date_pay }}</td>
+                    <td>
+                        {{ order.notice }}
+                    </td>
                     <td>
                         <form method="post">
                             {% csrf_token %}
