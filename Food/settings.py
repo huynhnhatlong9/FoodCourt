@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'order',
     'jquery',
+    'payment',
 ]
 
 MIDDLEWARE = [

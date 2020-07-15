@@ -1,5 +1,11 @@
+import hashlib
+import hmac
+import json
+import uuid
+import urllib
 from pprint import pprint
 
+import requests
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -14,6 +20,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import CreateView, UpdateView
 
 from home.models import Product, Cart, PayDone, OrderSuccess
+from payment.momo import momo_payment
 from .filter import FoodFilter
 
 
@@ -110,8 +117,8 @@ def cart_reduce(request, pk):
 @csrf_exempt
 def cart_add_message(request):
     if request.is_ajax():
-        pk = request.POST.get('pk',None)
-        text = request.POST.get('text',None)
+        pk = request.POST.get('pk', None)
+        text = request.POST.get('text', None)
         try:
             obj = Cart.objects.get(id=pk)
             obj.notice = text
@@ -151,21 +158,32 @@ def payment(request):
         sum['quantity'] += x.quantity
 
     if request.POST:
-        try:
-            food = Cart.objects.filter(user_id=request.user.id)
-            for x in food:
-                PayDone.objects.create(customer=x.user, vendor=x.food.shop, food=x.food.name, quantity=x.quantity,
-                                       price=x.food.price, date_pay=datetime.datetime.now(),
-                                       notice=x.notice)
-            food.delete()
-        finally:
-            messages.success(request, f"Thanh Toan Thanh Cong!")
-            return redirect('home')
+        return momo_payment()
     context = {
         'sum': sum,
         'foods': food,
     }
     return render(request, 'menu/payment.html', context)
+
+
+def paydone(request):
+    if request.GET:
+        r=request.GET.get('errorCode')
+        if r == '0':
+            text = 'Thành công'
+            try:
+                food = Cart.objects.filter(user_id=request.user.id)
+                for x in food:
+                    PayDone.objects.create(customer=x.user, vendor=x.food.shop, food=x.food.name, quantity=x.quantity,
+                                           price=x.food.price, date_pay=datetime.datetime.now())
+                food.delete()
+            except:
+                None
+        else:
+            text = 'Thất bại'
+    return render(request, 'menu/paydone.html', {
+        'text': text
+    })
 
 
 def food_store_delete(request, pk):

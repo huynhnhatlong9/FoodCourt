@@ -60,7 +60,7 @@
                 </tr>
 
                 <script>
-                    $('#'+{{ food.id }}).on('click', function (event) {
+                    $('#' +{{ food.id }}).on('click', function (event) {
                         if ($('#message-text').val() != '') {
                             $.ajax({
                                 url: "{% url 'card-add-message' %}",
@@ -92,8 +92,9 @@
         </table>
         <form method="post">
             {% csrf_token %}
-            <button class="btn btn-success float-md-right" type="submit">Thanh Toán</button>
+            <button class="btn btn-success float-md-right" id="pay" type="submit">Thanh Toán</button>
         </form>
+
     </div>
 {% endblock %}
 
