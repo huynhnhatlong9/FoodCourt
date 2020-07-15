@@ -16,7 +16,7 @@ def momo_payment(request,amoun):
     partnerCode = "MOMOPSQH20200627"
     accessKey = "ifNkJcHO7vkxo7HI"
     serectkey = "Qtni6MNmPj2aAvIjNU3CDGZBLJtHcWnu"
-    orderInfo = "Pay for "+request.user.username+"'s Food"
+    orderInfo = "Pay for "+request.user.username+" Food"
     returnUrl = "http://localhost:8000/cart/paydone/"
     notifyurl = "http://localhost:8000/intro/"
     amount = str(int(amoun))

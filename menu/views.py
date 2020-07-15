@@ -168,6 +168,8 @@ def payment(request):
 
 def paydone(request):
     if request.GET:
+        print('return\n')
+        print(request.GET)
         r=request.GET.get('errorCode')
         if r == '0':
             text = 'Thành công'
