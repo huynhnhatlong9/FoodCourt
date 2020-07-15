@@ -158,7 +158,7 @@ def payment(request):
         sum['quantity'] += x.quantity
 
     if request.POST:
-        return momo_payment()
+        return momo_payment(request,sum['price'])
     context = {
         'sum': sum,
         'foods': food,
@@ -231,7 +231,7 @@ def report_view(request):
 
 
 def customer_report_view(request):
-    report = OrderSuccess.objects.filter(customer_id=request.user.id)
+    report = OrderSuccess.get_item_by_customer(OrderSuccess,request.user.id)
     context = {
         'orders': report,
     }

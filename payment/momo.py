@@ -4,26 +4,29 @@ import hmac
 import hashlib
 
 import requests
+from django.contrib import messages
 from django.shortcuts import redirect
+from home.models import Cart
 
 
-def momo_payment():
+def momo_payment(request,amoun):
+    print(request.user)
     # parameters send to MoMo get get payUrl
     endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor"
     partnerCode = "MOMOPSQH20200627"
     accessKey = "ifNkJcHO7vkxo7HI"
     serectkey = "Qtni6MNmPj2aAvIjNU3CDGZBLJtHcWnu"
-    orderInfo = "pay with MoMo"
+    orderInfo = "Pay for "+request.user.username+"'s Food"
     returnUrl = "http://localhost:8000/cart/paydone/"
     notifyurl = "http://localhost:8000/intro/"
-    amount = "50000"
+    amount = str(int(amoun))
     orderId = str(uuid.uuid4())
     requestId = str(uuid.uuid4())
     requestType = "captureMoMoWallet"
     extraData = "merchantName=;merchantId="
     # pass empty value if your merchant does not have stores else merchantName=[storeName]; merchantId=[storeId] to identify a transaction map with a physical store
     rawSignature = "partnerCode=" + partnerCode + "&accessKey=" + accessKey + "&requestId=" + requestId + "&amount=" + amount + "&orderId=" + orderId + "&orderInfo=" + orderInfo + "&returnUrl=" + returnUrl + "&notifyUrl=" + notifyurl + "&extraData=" + extraData
-    h = hmac.new(bytes(serectkey, 'latin-1'), bytes(rawSignature , 'latin-1'), digestmod=hashlib.sha256)
+    h = hmac.new(bytes(serectkey, 'latin-1'), bytes(rawSignature, 'latin-1'), digestmod=hashlib.sha256)
     signature = h.hexdigest()
     data = {
         'partnerCode': partnerCode,
@@ -39,8 +42,11 @@ def momo_payment():
         'signature': signature
     }
     data = json.dumps(data)
-    clen=len(data)
-    r=requests.post(endpoint,data,{'Content-Type': 'application/json', 'Content-Length': clen})
-    wjson=json.dumps(r.json())
-    print(r.json()["payUrl"])
+    clen = len(data)
+    r = requests.post(endpoint, data, {'Content-Type': 'application/json', 'Content-Length': clen})
+    wjson = json.dumps(r.json())
+    print(r.json())
+    if r.json()['errorCode']!= 0:
+        messages.success(request,'Loi!')
+        return redirect('cart')
     return redirect(r.json()["payUrl"])

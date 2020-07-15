@@ -107,8 +107,8 @@ class PayDone(models.Model):
 
     def get_item_by_customer(self, customer_id):
         try:
-            return self.objects.filter(id=customer_id)
-        finally:
+            return self.objects.filter(customer_id=customer_id)
+        except:
             return None
 
     def get_item_by_vendor(self, vendor_id):
@@ -156,8 +156,8 @@ class OrderSuccess(models.Model):
 
     def get_item_by_customer(self, customer_id):
         try:
-            return self.objects.filter(id=customer_id)
-        finally:
+            return self.objects.filter(customer_id=customer_id)
+        except:
             return None
 
     def get_item_by_vendor(self, vendor_id):
