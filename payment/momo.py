@@ -47,6 +47,6 @@ def momo_payment(request,amoun):
     wjson = json.dumps(r.json())
     print(r.json())
     if r.json()['errorCode']!= 0:
-        messages.success(request,'Loi!')
+        messages.success(request,r.json()['localMessage'])
         return redirect('cart')
     return redirect(r.json()["payUrl"])

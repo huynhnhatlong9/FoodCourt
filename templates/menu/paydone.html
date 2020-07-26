@@ -3,7 +3,16 @@
 <title>BK | Paydone</title>
 {% endblock %}
 {% block container %}
-    <div class="container">
-        <h4>{{ text }}</h4>
+    <div class="container mt-5 jumbotron pt-3 w-50 pb-3 bg-light">
+            <div>
+                <div class="content-section">
+                    <h2 class="text-success">Thanh toán {{ text }}!</h2>
+                    <div class="border-top pt-3">
+                        <small class="text-muted">
+                            Mua hàng tiếp? <a href="{% url 'menu' %}">Menu</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
     </div>
 {% endblock %}
