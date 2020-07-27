@@ -4,16 +4,18 @@
 }
 
 html {
-    height: 100%;
+
 }
 
 body {
+    height: 100%;
     font-family: "Poppins", sans-serif;
     padding: 0pt;
-    height: 110%;
     background-color: rgba(175, 175, 177, 0.6);
 }
-
+.container{
+    height: 100%;
+}
 
 .logo {
     font-family: peachcream !important;

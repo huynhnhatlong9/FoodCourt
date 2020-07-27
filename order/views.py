@@ -77,6 +77,7 @@ def cart_add_message(request):
             obj = Cart.objects.get(id=pk)
             obj.notice = text
             obj.save()
+            print(obj.notice)
         except:
             None
         return JsonResponse({}, status=200)
