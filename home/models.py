@@ -54,13 +54,20 @@ class Product(models.Model):
         except:
             return None
 
+    def get_num_of_product(self, vendor_id):
+        try:
+            return self.objects.filter(shop_id=vendor_id).count()
+        except:
+            return None
+
 
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     food = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     date_buy = models.DateTimeField(default=datetime.now())
-    notice = models.TextField(blank=True,default='')
+    notice = models.TextField(blank=True, default='')
+
     class Meta:
         ordering = ('user',)
 
@@ -91,7 +98,7 @@ class PayDone(models.Model):
     quantity = models.IntegerField(default=1)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_pay = models.DateTimeField(default=timezone.now())
-    notice = models.TextField(blank=True,default='')
+    notice = models.TextField(blank=True, default='')
 
     def __str__(self):
         return self.food
@@ -175,5 +182,14 @@ class OrderSuccess(models.Model):
     def get_item_by_price(self, price):
         try:
             return self.objects.filter(price=price)
+        except:
+            return None
+    def get_sales(self,vendor_id):
+        try:
+            count=0
+            obj=self.objects.filter(vendor_id=vendor_id)
+            for o in obj:
+                count+=o.quantity
+            return count
         except:
             return None

@@ -1,7 +1,33 @@
 {% extends 'home/base.html' %}
 {% block title %}
-<title>BK | Vendor</title>
+    <title>BK | Vendor</title>
 {% endblock %}
 {% block container %}
+    <div class="container jumbotron mt-3 pt-3 bg-light">
+        <fieldset class="border-bottom border-success mb-3">
+            <legend class="text-success">Danh sách các Vendor</legend>
+        </fieldset>
+        <table class="table table-{1:striped|sm|bordered|hover|inverse} table-inverse table-bordered">
+            <thead class="thead-inverse|thead-default table-bordered table-success">
+            <tr>
+                <th>Name</th>
+                <th>Số lượng sản phẩm</th>
+                <th>Doanh số</th>
+                <th>Ngày tham gia</th>
 
+            </tr>
+            </thead>
+            <tbody>
+            {% for vendor in list_vendor %}
+                <tr>
+                    <td scope="row">{{ vendor.username }}</td>
+                    <td>{{ vendor.count }}</td>
+                    <td>{{ vendor.sales }}</td>
+                    <td>{{ vendor.date_join }}</td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
 {% endblock %}

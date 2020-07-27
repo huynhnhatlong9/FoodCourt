@@ -19,10 +19,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path, include
-from report import views as ReportView
-import order
+from report import views as report_view
 from account import views as login_view
-from menu import views
+from menu import views as menu_view
+from home import views as home_view
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
@@ -30,12 +30,13 @@ urlpatterns = [
                   path('profile/', login_view.AccountDetailView.as_view(), name='profile'),
                   path('update/', login_view.AccountUpdateView.as_view(), name='accountupdate'),
                   path('menu/', include('menu.urls')),
-                  path('donhang/', views.don_hang_view, name='donhang'),
-                  path('customer-report/', views.customer_report_view, name='customer-report'),
-                  path('report/', views.report_view, name='report'),
+                  path('donhang/', menu_view.don_hang_view, name='donhang'),
+                  path('customer-report/', report_view.customer_report_view, name='customer-report'),
+                  path('report/', report_view.report_view, name='report'),
                   path('cart/', include('order.urls')),
-                  path('intro/', views.intro_view, name='intro'),
-                  path('vendor/', ReportView.view_vendor, name='list_vendor'),
+                  path('newvendor/', login_view.new_vendor, name='new_vendor'),
+                  path('intro/', home_view.intro_view, name='intro'),
+                  path('vendor/', report_view.view_vendor, name='list_vendor'),
                   url('login/', LoginView.as_view(template_name='login/login.html'), name='login'),
                   url('logout/', LogoutView.as_view(template_name='login/logout.html'), name='logout'),
                   url(r'^$', include('home.urls')),

@@ -2,13 +2,15 @@
 <title>BK | Home</title>
 {% endblock %} {% block container %}
 
-<div class="jumbotron mb-0">
-    <div class="container text-center">
-        <h1>Bach Khoa Smart Food Court</h1>
-        <p>Walk right up to good food</p>
+<div class="jumbotron p-0 cc">
+    <div class="text-center">
+        <br>
+        <h1 class="text-style">Bach Khoa Smart Food Court</h1>
+        <p class="text-style">Walk right up to good food</p>
+        <br>
     </div>
 </div>
-<div id="carouselId" class="carousel slide p-1" data-ride="carousel">
+<div id="carouselId" class="carousel slide p-1 ml-lg-5 mr-lg-5" data-ride="carousel">
     <ol class="carousel-indicators">
         {% for foo in list %} {% if forloop.first %}
         <li data-target="#carouselId" data-slide-to="0" class="active"></li>

@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load crispy_forms_filters %}
 {% block title %}
     <title>BK | Food Store</title>
 {% endblock %}
@@ -10,10 +11,8 @@
         {% if user.is_staff %}
             <div class="card-body">
                 <form method="get" class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <input type="text" placeholder="Search..." name="q" class="form-control ">
-                    </div>
-                    <button class="btn btn-success mb-2" type="submit">Tìm kiếm</button>
+                    {{ filter.form|crispy }}
+                    <button class="btn btn-success ml-md-4" type="submit">Tìm kiếm</button>
                 </form>
             </div>
             {% if foods.count > 0 %}
@@ -26,9 +25,9 @@
                                         <img src="{{ x.image.url }}" class="mr-3 ml-4" alt="..."
                                              style="width: 100px; height: 100px">
                                         <div class="media-body" style="width: 90%">
-                                            <h5 class="mt-0">{{ x.name }}</h5>
-                                            <h6>Price: {{ x.price }}</h6>
-                                            <h6>Quantity: {{ x.quantity }}</h6>
+                                            <h6 class="mt-0"><strong>{{ x.name }}</strong></h6>
+                                            <small>Price: {{ x.price }}</small> <br>
+                                            <small>Quantity: {{ x.quantity }}</small><br>
                                             <a href="{% url 'foodstore-edit' x.id %}" style="text-decoration: none">
                                                 <button class="btn btn-success btn-sm">
                                                     <i class="fa fa-pencil-square-o"></i>

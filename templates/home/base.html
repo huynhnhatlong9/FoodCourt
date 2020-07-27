@@ -61,7 +61,6 @@
                             <a class="dropdown-item" href="{% url 'profile' %}">Thông Tin Tài Khoản</a>
                             <a class="dropdown-item" href="{% url 'accountupdate' %}">Chỉnh Sửa Thông Tin</a>
                             <a class="dropdown-item" href="{% url 'report' %}">Report</a>
-
                             <a class="dropdown-item" href="{% url 'logout' %}">Đăng xuất</a>
                         </div>
                     </div>
@@ -71,9 +70,9 @@
                             <small>Vendor</small>
                         </button>
                     </a>
-                    <a href="{% url 'foodstore' %}">
-                        <button class="btn btn-info mr-2"><i class="fa fa-cutlery" aria-hidden="true"></i>
-                            <small>Report</small>
+                    <a href="{% url 'new_vendor' %}">
+                        <button class="btn btn-info mr-2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            <small>Add Vendor</small>
                         </button>
                     </a>
                     <div class="dropdown">
@@ -115,7 +114,18 @@
     </div>
 </nav>
 {% block container %} {% endblock container %} {% block script %} {% endblock script %}
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
 
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://github.com/huynhnhatlong9/" target="_blank"> JapanDragon</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 <script src="{% static 'bootstrap/js/jquery-3.5.1.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>

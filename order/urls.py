@@ -1,14 +1,12 @@
-from django.conf.urls import url
-from django.contrib.auth.decorators import login_required
 from django.urls import path
-
-from menu import views
+from payment import views as payment_view
+from order import views as order_view
 
 urlpatterns = [
-    path('', views.cart_view, name='cart'),
-    path('addMess/', views.cart_add_message, name='card-add-message'),
-    path('reduce/<int:pk>/', views.cart_reduce, name='cart-reduce'),
-    path('add/<int:pk>', views.cart_add, name='cart-add'),
-    path('payment/', views.payment, name='payment'),
-    path('paydone/', views.paydone, name='paydone'),
+    path('', order_view.cart_view, name='cart'),
+    path('addMess/', order_view.cart_add_message, name='card-add-message'),
+    path('reduce/<int:pk>/', order_view.cart_reduce, name='cart-reduce'),
+    path('add/<int:pk>', order_view.cart_add, name='cart-add'),
+    path('payment/', payment_view.payment, name='payment'),
+    path('paydone/', payment_view.paydone, name='paydone'),
 ]
