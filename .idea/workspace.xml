@@ -25,16 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update momo payment">
-      <change afterPath="$PROJECT_DIR$/templates/report/vendor_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/momo.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment/momo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/paydone.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/paydone.html" afterDir="false" />
-    </list>
+    <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="update momo payment" />
     <list id="474092da-77c1-445e-a840-76d200801e83" name="update intro" comment="" />
     <list id="c1ea5923-9707-416c-856e-4da0e0aa91eb" name="update models.py" comment="update models.py">
       <changelist_data name="JapanDragon" email="huynhnhatlong9@gmail.com" date="1593012015000" />
@@ -187,6 +178,7 @@
       <workItem from="1594830719551" duration="4011000" />
       <workItem from="1595164473357" duration="48000" />
       <workItem from="1595735483524" duration="3014000" />
+      <workItem from="1595858515641" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
