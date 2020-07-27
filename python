@@ -1,0 +1,5 @@
+Migrations for 'home':
+  home\migrations\0003_auto_20200712_0054.py
+    - Alter field date_buy on cart
+    - Alter field date_done on ordersuccess
+    - Alter field date_pay on paydone
