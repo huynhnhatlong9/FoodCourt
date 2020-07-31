@@ -93,6 +93,11 @@
                         <small>Cart</small>
                     </button>
                 </a>
+                <a href="{% url 'food-processing' %}">
+                    <button class="btn btn-warning mr-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <small>Đang xử lí</small>
+                    </button>
+                </a>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle mr-sm-2" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,7 +121,7 @@
 {% block container %} {% endblock container %} {% block script %} {% endblock script %}
 
 <!-- Footer -->
-<footer class="">
+<footer class=" font-small blue">
 
 
   <!-- Copyright -->

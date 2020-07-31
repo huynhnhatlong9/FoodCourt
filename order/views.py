@@ -1,4 +1,3 @@
-
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -10,7 +9,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import CreateView
 
-from home.models import Product, Cart
+from home.models import Product, Cart, PayDone
 
 
 # Create your views here.
@@ -101,3 +100,9 @@ def cart_add(request, pk):
         messages.success(request, f"Thêm Thành Công!")
         return redirect('cart')
 
+
+def food_proccessing(request):
+    foods = PayDone.get_item_by_customer(PayDone, request.user.id)
+    return render(request, 'menu/dangxuli.html', {
+        'foods': foods
+    })

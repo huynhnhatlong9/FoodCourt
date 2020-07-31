@@ -2,19 +2,16 @@
     font-family: "peachcream";
     src: url("../fonts/peachcream.ttf") format("truetype");
 }
-
-html {
-
+*{
+    text-decoration: none;
 }
 
 body {
-    height: 100%;
+    position: relative;
+    min-height: 100%;
     font-family: "Poppins", sans-serif;
     padding: 0pt;
     background-color: rgba(175, 175, 177, 0.6);
-}
-.container{
-    height: 100%;
 }
 
 .logo {

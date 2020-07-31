@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'home',
     'menu',
     'bootstrap',
-    'fontawesome',
     'crispy_forms',
     'order',
     'jquery',

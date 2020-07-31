@@ -9,5 +9,7 @@ urlpatterns = [
     path('foodstore/delete/<int:pk>/', menu_views.food_store_delete, name='foodstore-delete'),
     path('foodstore/edit/<int:pk>/', menu_views.FoodUpdateView.as_view(), name='foodstore-edit'),
     url('foodstore/', login_required(menu_views.food_store), name='foodstore'),
+    path('processing/', order_view.food_proccessing, name='food-processing'),
     url('', menu_views.menu_view, name='menu'),
+
 ]
