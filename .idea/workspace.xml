@@ -26,8 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d2b32-4b5b-4033-96eb-c7b8bf0eb6a9" name="Default Changelist" comment="new module">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Food/settings.py" afterDir="false" />
     </list>
     <list id="474092da-77c1-445e-a840-76d200801e83" name="update intro" comment="" />
     <list id="c1ea5923-9707-416c-856e-4da0e0aa91eb" name="update models.py" comment="update models.py">
@@ -187,7 +188,7 @@
       <workItem from="1595858515641" duration="9410000" />
       <workItem from="1596163455196" duration="1205000" />
       <workItem from="1596200065399" duration="4080000" />
-      <workItem from="1600424498613" duration="2615000" />
+      <workItem from="1600424498613" duration="3187000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1592587945110</created>
@@ -448,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600426202718</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="new module">
+      <created>1600427121282</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1600427121282</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,10 +548,10 @@
     </state>
     <state x="313" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594306067857" />
     <state x="278" y="28" width="998" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1600425028199" />
-    <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592574294892">
+    <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600427590320">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1592574294892" />
+    <state x="360" y="200" width="635" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1600427590320" />
     <state x="416" y="118" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594487357917">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -620,12 +628,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="278" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1594474681806" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1600426211515">
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2" timestamp="1600427127853">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="278" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595867284550" />
     <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594390607178" />
-    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1600426211515" />
+    <state x="278" y="134" width="800" height="529" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1600427127853" />
     <state x="100" y="128" width="1166" height="540" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592759932023">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
