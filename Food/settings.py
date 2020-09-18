@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-zepg-%c(by=99e0!v-pj*(%q+_%o^)&q&=5om_+1ok3&91scn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['foodcourtjd.herokuapp.com','127.0.0.1']
 
 # Application definition
 
